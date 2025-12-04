@@ -31,5 +31,37 @@
                 "day":14,
                 "year":2022
             }
+        },
+        {
+            "id":"prop3",
+			"type":"House",
+            "bedrooms":5,
+			"price":1500000,
+			"tenure":"Leasehold",
+			"description":"Stunning five bedroom detached home featuring high ceilings and extensive garden space. <br>This elegant property offers a spacious reception area filled with natural light, leading into a beautifully designed open-plan kitchen and dining room ideal for modern family living. Each bedroom is generously sized, with the principal suite enjoying its own private en-suite and ample wardrobe space. The home also includes a contemporary family bathroom, a separate utility area, and plenty of storage throughout. Outside, the expansive garden provides a perfect setting for outdoor entertaining, relaxing, or future landscaping plans. Finished to an excellent standard and located in a desirable neighbourhood, this property offers a rare opportunity to experience comfort, space, and refined living...",
+			"location":"12 Meadow View, Guildford, Surrey",
+			"picture":"images/prop3pic1small.jpg",
+			"url":"properties/prop3.html",
+            "added": {
+                "month":"December",
+                "day": 4,
+                "year":2024
+            }
+        },
+        {
+            "id":"prop4",
+			"type":"Flat",
+            "bedrooms":1,
+			"price":250000,
+			"tenure":"Leasehold",
+			"description":"A modern and well-presented one bedroom apartment, ideal for first time buyers or investors. The property features a bright living area with a modern fitted kitched and a contemporary bathroom. Located within easy reach of local amenities, transportation links and shops, this apartment offers a comfortable and low-maintenance lifestyle in a convenient setting...",
+			"location":"Crofton Road Orpington BR6",
+			"picture":"images/prop2pic1small.jpg",
+			"url":"properties/prop2.html",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2022
+            }
         }
 ]}
