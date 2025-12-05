@@ -44,7 +44,7 @@
 			"url":"properties/prop3.html",
             "added": {
                 "month":"December",
-                "day": 4,
+                "day":4,
                 "year":2024
             }
         },
@@ -55,13 +55,61 @@
 			"price":250000,
 			"tenure":"Leasehold",
 			"description":"A modern and well-presented one bedroom apartment, ideal for first time buyers or investors. The property features a bright living area with a modern fitted kitched and a contemporary bathroom. Located within easy reach of local amenities, transportation links and shops, this apartment offers a comfortable and low-maintenance lifestyle in a convenient setting...",
-			"location":"Crofton Road Orpington BR6",
-			"picture":"images/prop2pic1small.jpg",
-			"url":"properties/prop2.html",
+			"location":"Flat 7, 28 Brookside Court, Reading, Berkshire", 
+			"picture":"images/prop4pic1small.jpg",
+			"url":"properties/prop4.html",
             "added": {
-                "month":"September",
+                "month":"October",
+                "day":26,
+                "year":2025
+            }
+        },
+        {
+            "id":"prop5",
+			"type":"House",
+            "bedrooms":4,
+			"price":925000,
+			"tenure":"Freehold",
+			"description":"Victorian terraced house with many original features. This beautifully presented four-bedroom home offers bright living spaces, high ceilings, and charming period details throughout. The property includes a generous double reception room, a well-equipped fitted kitchen with access to a private garden, and two modern bathrooms spread across the upper floors. With its character, space, and timeless style, this home provides comfortable family living in a classic Victorian setting...",
+			"location":"14 Willowbank Road, Chiswick, London", 
+			"picture":"images/prop5pic1small.jpg",
+			"url":"properties/prop5.html",
+            "added": {
+                "month":"May",
+                "day":12,
+                "year":2025
+            }
+        },
+        {
+            "id":"prop6",
+			"type":"Flat",
+            "bedrooms":6,
+			"price":1950000,
+			"tenure":"Leasehold",
+			"description":"Spacious six-bedroom penthouse apartment. This remarkable property offers expansive living areas, floor-to-ceiling windows, and breathtaking views across the city skyline. The penthouse features a large reception space ideal for entertaining, a sleek contemporary kitchen with high-end appliances, and six generously sized bedrooms, including a luxurious principal suite with its own private bathroom. Additional highlights include multiple modern bathrooms, ample storage, and direct lift access for added convenience. Finished to an exceptional standard throughout, this residence delivers outstanding space, style, and exclusivity in a truly impressive setting...",
+			"location":"Penthouse 9, Queens Wharf, Oxford", 
+			"picture":"images/prop6pic1small.jpg",
+			"url":"properties/prop6.html",
+            "added": {
+                "month":"July",
+                "day":20,
+                "year":2024
+            }
+        },
+        {
+            "id":"prop7",
+			"type":"House",
+            "bedrooms":1,
+			"price":320000,
+			"tenure":"Freehold",
+			"description":"Charming one-bedroom house offering comfortable and low-maintenance living. The property features a bright lounge area, a modern fitted kitchen, and a well-sized bathroom. A private outdoor space add to the appeal, making it an ideal choice for first-time buyers or those seeking a quiet, easy-to-manage home. Presented in good condition throughout, it provides a cosy and practical living environment...",
+			"location":"6 Maple Close, St Albans, Hertfordshire", 
+			"picture":"images/prop7pic1small.jpg",
+			"url":"properties/prop7.html",
+            "added": {
+                "month":"June",
                 "day":14,
-                "year":2022
+                "year":2023
             }
         }
 ]}
