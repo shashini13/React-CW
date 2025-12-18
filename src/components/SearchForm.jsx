@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Select from 'react-select';
-import { DatePicker } from 'react-widgets/cjs';
-import 'react-widgets/styles.css';
+import { DatePicker } from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css'
 
 const SearchForm = () => {
     const [type, setType] = useState("Any");
@@ -76,8 +76,9 @@ const SearchForm = () => {
                 placeholder="Max Bedrooms"
             /> 
 
+            <label>Date Added</label>    
             <DatePicker
-                value={dateAdded}   
+                selected={dateAdded}   
                 onChange={(date) => setDateAdded(date)}
                 placeholder="Choose date added"
             />    
