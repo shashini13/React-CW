@@ -74,7 +74,23 @@ const SearchForm = () => {
                 ]}
                 onChange={(selected) => setMaxBedrooms(selected.value)}
                 placeholder="Max Bedrooms"
+            /> 
+
+            <DatePicker
+                selected={dateAdded}   
+                onChange={(date) => setDateAdded(date)}
+                placeholder="Choose date added"
             />    
+
+            <label>Postcode (eg: BR5)</label>
+            <input
+                type="text"
+                value={postcode}
+                onChange={(code) => setPostcode(code.target.value.toUpperCase())}
+                placeholder="Enter postcode"
+            />  
+
+            <button type="submit">Search</button>      
         </form>
     );
 }
