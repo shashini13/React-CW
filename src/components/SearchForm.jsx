@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Select from 'react-select/base';
+import Select from 'react-select';
 import { DatePicker } from 'react-widgets/cjs';
 import 'react-widgets/styles.css';
 
@@ -77,7 +77,7 @@ const SearchForm = () => {
             /> 
 
             <DatePicker
-                selected={dateAdded}   
+                value={dateAdded}   
                 onChange={(date) => setDateAdded(date)}
                 placeholder="Choose date added"
             />    
