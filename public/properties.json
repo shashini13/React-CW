@@ -8,6 +8,7 @@
 			"tenure":"Freehold",
 			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
+            "postcode":"BR5",
 			"picture":"images/prop1pic1small.jpg",
 			"url":"properties/prop1.html",
             "added": {
@@ -24,6 +25,7 @@
 			"tenure":"Freehold",
 			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
 			"location":"Crofton Road Orpington BR6",
+            "postcode":"BR6",
 			"picture":"images/prop2pic1small.jpg",
 			"url":"properties/prop2.html",
             "added": {
@@ -40,6 +42,7 @@
 			"tenure":"Leasehold",
 			"description":"Stunning five bedroom detached home featuring high ceilings and extensive garden space. <br>This elegant property offers a spacious reception area filled with natural light, leading into a beautifully designed open-plan kitchen and dining room ideal for modern family living. Each bedroom is generously sized, with the principal suite enjoying its own private en-suite and ample wardrobe space. The home also includes a contemporary family bathroom, a separate utility area, and plenty of storage throughout. Outside, the expansive garden provides a perfect setting for outdoor entertaining, relaxing, or future landscaping plans. Finished to an excellent standard and located in a desirable neighbourhood, this property offers a rare opportunity to experience comfort, space, and refined living...",
 			"location":"12 Meadow View, Guildford, Surrey",
+            "postcode":"GU2",
 			"picture":"images/prop3pic1small.jpg",
 			"url":"properties/prop3.html",
             "added": {
@@ -56,6 +59,7 @@
 			"tenure":"Leasehold",
 			"description":"A modern and well-presented one bedroom apartment, ideal for first time buyers or investors. The property features a bright living area with a modern fitted kitched and a contemporary bathroom. Located within easy reach of local amenities, transportation links and shops, this apartment offers a comfortable and low-maintenance lifestyle in a convenient setting...",
 			"location":"Flat 7, 28 Brookside Court, Reading, Berkshire", 
+            "postcode":"RG1",
 			"picture":"images/prop4pic1small.jpg",
 			"url":"properties/prop4.html",
             "added": {
@@ -72,6 +76,7 @@
 			"tenure":"Freehold",
 			"description":"Victorian terraced house with many original features. This beautifully presented four-bedroom home offers bright living spaces, high ceilings, and charming period details throughout. The property includes a generous double reception room, a well-equipped fitted kitchen with access to a private garden, and two modern bathrooms spread across the upper floors. With its character, space, and timeless style, this home provides comfortable family living in a classic Victorian setting...",
 			"location":"14 Willowbank Road, Chiswick, London", 
+            "postcode":"W4",
 			"picture":"images/prop5pic1small.jpg",
 			"url":"properties/prop5.html",
             "added": {
@@ -88,6 +93,7 @@
 			"tenure":"Leasehold",
 			"description":"Spacious six-bedroom penthouse apartment. This remarkable property offers expansive living areas, floor-to-ceiling windows, and breathtaking views across the city skyline. The penthouse features a large reception space ideal for entertaining, a sleek contemporary kitchen with high-end appliances, and six generously sized bedrooms, including a luxurious principal suite with its own private bathroom. Additional highlights include multiple modern bathrooms, ample storage, and direct lift access for added convenience. Finished to an exceptional standard throughout, this residence delivers outstanding space, style, and exclusivity in a truly impressive setting...",
 			"location":"Penthouse 9, Queens Wharf, Oxford", 
+            "postcode":"OX1",
 			"picture":"images/prop6pic1small.jpg",
 			"url":"properties/prop6.html",
             "added": {
@@ -104,6 +110,7 @@
 			"tenure":"Freehold",
 			"description":"Charming one-bedroom house offering comfortable and low-maintenance living. The property features a bright lounge area, a modern fitted kitchen, and a well-sized bathroom. A private outdoor space add to the appeal, making it an ideal choice for first-time buyers or those seeking a quiet, easy-to-manage home. Presented in good condition throughout, it provides a cosy and practical living environment...",
 			"location":"6 Maple Close, St Albans, Hertfordshire", 
+            "postcode":"AL3",
 			"picture":"images/prop7pic1small.jpg",
 			"url":"properties/prop7.html",
             "added": {
