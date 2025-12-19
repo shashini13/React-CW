@@ -1,33 +1,69 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
+import SearchForm from './components/SearchForm'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [allProperties, setAllProperties] = useState([]);
+  const [results, setResults] = useState([]);
+
+  useEffect(() => {
+    fetch('/properties.json')
+    .then((res) => {
+        if (!res.ok) throw new Error("Failed to load properties")
+        return res.json();
+    })
+    .then((data) => {
+      setAllProperties(data.properties)
+      setResults(data.properties)
+      setLoading(false)
+    })
+      .catch((err) => {
+      setError(err.message)
+      setLoading(false)
+    })
+  }, [])
+
+  if(loading) return <p>Loading properties...</p>
+    if(error) return <p>Error: {error}</p>
+
+        
+  const filtering = (selectedFilters) => {
+    let filtered = allProperties;
+
+    if (selectedFilters.type && selectedFilters.type != "Any") {
+      filtered = filtered.filter(p => p.type === selectedFilters.type);
+    }
+    if (selectedFilters.minPrice) {
+      filtered = filtered.filter(p => p.minPrice >= selectedFilters.minPrice);
+    }
+    if (selectedFilters.maxPrice) {
+      filtered = filtered.filter(p => p.maxPrice <= selectedFilters.maxPrice);
+    }
+    if (selectedFilters.minBedrooms) {
+      filtered = filtered.filter(p => p.minBedrooms >= selectedFilters.minBedrooms);
+    }
+    if (selectedFilters.maxBedrooms) {
+      filtered = filtered.filter(p => p.maxBedrooms <= selectedFilters.maxBedrooms);
+    }
+    if (selectedFilters.dateAdded) {
+      filtered = filtered.filter(p => {
+        const propertyDate = new Date(
+          `${p.added.year}-${p.added.month}-${p.added.day}`
+        );
+        return propertyDate > selectedFilters.dateAdded
+      });
+    }
+    if (selectedFilters.postcode) {
+      filtered = filtered.filter(p => p.postcode.toUpperCase().startsWith(selectedFilters.postcode.toUpperCase()));
+    }
+            
+    setResults(filtered);
+  };  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <SearchForm/>
     </>
   )
 }
