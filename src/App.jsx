@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import SearchForm from './components/SearchForm'
+import { useState, useEffect } from 'react';
+import './App.css';
+import SearchForm from './components/SearchForm';
+import PropertyList from './components/PropertyList';
 
 function App() {
 
   const [allProperties, setAllProperties] = useState([]);
   const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('/properties.json')
@@ -25,7 +28,7 @@ function App() {
   }, [])
 
   if(loading) return <p>Loading properties...</p>
-    if(error) return <p>Error: {error}</p>
+  if(error) return <p>Error: {error}</p>
 
         
   const filtering = (selectedFilters) => {
@@ -35,16 +38,16 @@ function App() {
       filtered = filtered.filter(p => p.type === selectedFilters.type);
     }
     if (selectedFilters.minPrice) {
-      filtered = filtered.filter(p => p.minPrice >= selectedFilters.minPrice);
+      filtered = filtered.filter(p => p.price >= selectedFilters.minPrice);
     }
     if (selectedFilters.maxPrice) {
-      filtered = filtered.filter(p => p.maxPrice <= selectedFilters.maxPrice);
+      filtered = filtered.filter(p => p.price <= selectedFilters.maxPrice);
     }
     if (selectedFilters.minBedrooms) {
-      filtered = filtered.filter(p => p.minBedrooms >= selectedFilters.minBedrooms);
+      filtered = filtered.filter(p => p.bedrooms >= selectedFilters.minBedrooms);
     }
     if (selectedFilters.maxBedrooms) {
-      filtered = filtered.filter(p => p.maxBedrooms <= selectedFilters.maxBedrooms);
+      filtered = filtered.filter(p => p.bedrooms <= selectedFilters.maxBedrooms);
     }
     if (selectedFilters.dateAdded) {
       filtered = filtered.filter(p => {
@@ -63,7 +66,8 @@ function App() {
 
   return (
     <>
-      <SearchForm/>
+      <SearchForm onSearch={filtering}/>
+      <PropertyList results={results}/>
     </>
   )
 }
