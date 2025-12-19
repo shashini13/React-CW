@@ -22,29 +22,6 @@ const SearchForm = () => {
         onSearch({type, minPrice, maxPrice, minBedrooms, maxBedrooms, dateAdded, postcode});
     }
 
-    const handleSearch = (e) => {
-        const [allProperties, setAllProperties] = useState([]);
-        const [results, setResults] = useState([]);
-
-        useEffect(() => {
-            fetch('/properties.json')
-            .then((res) => {
-                if (!res.ok) throw new Error("Failed to load properties")
-                    return res.json()
-            })
-            .then((data) => {
-                setAllProperties(data.properties)
-                setResults(data.properties)
-                setLoading(false)
-            })
-            .catch((err) => {
-                setError(err.message)
-                setLoading(false)
-            })
-        }, [])
-
-    }
-
     return (
         <form>
             <label>Property Type</label>
