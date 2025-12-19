@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Select from 'react-select';
-import { DatePicker } from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
 
-const SearchForm = () => {
+const SearchForm = ({onSearch}) => {
     const [type, setType] = useState("Any");
 
     const [minPrice, setMinPrice] = useState(null);
@@ -23,7 +23,7 @@ const SearchForm = () => {
     }
 
     return (
-        <form>
+        <form className="search-form" onSubmit={handleSubmit}>
             <label>Property Type</label>
             <Select 
                 options={[ 
@@ -32,8 +32,8 @@ const SearchForm = () => {
                     {value: "Flat", label:"Flat"}
                 ]}
                 onChange={(selected) => setType(selected.value)}
-                placeholder="Select type..."
-            />   
+                placeholder=""
+            />
 
             <label>Minimum Price (£)</label> 
             <Select
@@ -44,7 +44,7 @@ const SearchForm = () => {
                     {value: 400000, label: "400 000"},
                 ]}
                 onChange={(selected) => setMinPrice(selected.value)}
-                placeholder="Min price"
+                placeholder=""
             /> 
 
             <label>Maximum Price (£)</label> 
@@ -56,7 +56,7 @@ const SearchForm = () => {
                     {value: 2000000, label: "2 000 000"},
                 ]}
                 onChange={(selected) => setMaxPrice(selected.value)}
-                placeholder="Max price"
+                placeholder=""
             /> 
 
             <label>Minimum Bedrooms</label> 
@@ -68,7 +68,7 @@ const SearchForm = () => {
                     
                 ]}
                 onChange={(selected) => setMinBedrooms(selected.value)}
-                placeholder="Min Bedrooms"
+                placeholder=""
             /> 
 
             <label>Maximum Bedrooms</label> 
@@ -80,14 +80,13 @@ const SearchForm = () => {
                     
                 ]}
                 onChange={(selected) => setMaxBedrooms(selected.value)}
-                placeholder="Max Bedrooms"
+                placeholder=""
             /> 
 
             <label>Date Added</label>    
             <DatePicker
                 selected={dateAdded}   
                 onChange={(date) => setDateAdded(date)}
-                placeholder="Choose date added"
             />    
 
             <label>Postcode (eg: BR5)</label>
