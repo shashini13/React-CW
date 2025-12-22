@@ -10,6 +10,15 @@
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
             "postcode":"BR5",
 			"picture":"images/prop1pic1small.png",
+            "images": [
+                "images/prop1pic1small.png",
+                "images/prop1pic2small.png",
+                "images/prop1pic3small.png",
+                "images/prop1pic4small.png",
+                "images/prop1pic5small.png",
+                "images/prop1pic6small.png",
+                "images/prop1pic7small.png"
+            ],
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
@@ -27,6 +36,15 @@
 			"location":"Crofton Road Orpington BR6",
             "postcode":"BR6",
 			"picture":"images/prop2pic1small.jpg",
+            "images": [
+                "images/prop2pic1small.png",
+                "images/prop2pic2small.png",
+                "images/prop2pic3small.png",
+                "images/prop2pic4small.png",
+                "images/prop2pic5small.png",
+                "images/prop2pic6small.png",
+                "images/prop2pic7small.png"
+            ],
 			"url":"properties/prop2.html",
             "added": {
                 "month":"September",
@@ -44,6 +62,15 @@
 			"location":"12 Meadow View, Guildford, Surrey",
             "postcode":"GU2",
 			"picture":"images/prop3pic1small.jpg",
+            "images": [
+                "images/prop3pic1small.png",
+                "images/prop3pic2small.png",
+                "images/prop3pic3small.png",
+                "images/prop3pic4small.png",
+                "images/prop3pic5small.png",
+                "images/prop3pic6small.png",
+                "images/prop3pic7small.png"
+            ],
 			"url":"properties/prop3.html",
             "added": {
                 "month":"December",
@@ -61,6 +88,15 @@
 			"location":"Flat 7, 28 Brookside Court, Reading, Berkshire", 
             "postcode":"RG1",
 			"picture":"images/prop4pic1small.jpg",
+            "images": [
+                "images/prop4pic1small.png",
+                "images/prop4pic2small.png",
+                "images/prop4pic3small.png",
+                "images/prop4pic4small.png",
+                "images/prop4pic5small.png",
+                "images/prop4pic6small.png",
+                "images/prop4pic7small.png"
+            ],
 			"url":"properties/prop4.html",
             "added": {
                 "month":"October",
@@ -78,6 +114,15 @@
 			"location":"14 Willowbank Road, Chiswick, London", 
             "postcode":"W4",
 			"picture":"images/prop5pic1small.jpg",
+            "images": [
+                "images/prop5pic1small.png",
+                "images/prop5pic2small.png",
+                "images/prop5pic3small.png",
+                "images/prop5pic4small.png",
+                "images/prop5pic5small.png",
+                "images/prop5pic6small.png",
+                "images/prop5pic7small.png"
+            ],
 			"url":"properties/prop5.html",
             "added": {
                 "month":"May",
@@ -95,6 +140,15 @@
 			"location":"Penthouse 9, Queens Wharf, Oxford", 
             "postcode":"OX1",
 			"picture":"images/prop6pic1small.jpg",
+            "images": [
+                "images/prop6pic1small.png",
+                "images/prop6pic2small.png",
+                "images/prop6pic3small.png",
+                "images/prop6pic4small.png",
+                "images/prop6pic5small.png",
+                "images/prop6pic6small.png",
+                "images/prop6pic7small.png"
+            ],
 			"url":"properties/prop6.html",
             "added": {
                 "month":"July",
@@ -112,6 +166,15 @@
 			"location":"6 Maple Close, St Albans, Hertfordshire", 
             "postcode":"AL3",
 			"picture":"images/prop7pic1small.jpg",
+            "images": [
+                "images/prop7pic1small.png",
+                "images/prop7pic2small.png",
+                "images/prop7pic3small.png",
+                "images/prop7pic4small.png",
+                "images/prop7pic5small.png",
+                "images/prop7pic6small.png",
+                "images/prop7pic7small.png"
+            ],
 			"url":"properties/prop7.html",
             "added": {
                 "month":"June",
