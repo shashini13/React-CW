@@ -3,7 +3,8 @@ import './App.css';
 import SearchForm from './components/SearchForm';
 import PropertyList from './components/PropertyList';
 import Favourites from './components/Favourites';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import PropertyDetails from './components/PropertyDetails'
 
 function App() {
   const [allProperties, setAllProperties] = useState([]);
@@ -94,8 +95,9 @@ function App() {
             />
             <PropertyList results={results} onFavourite={addFavourite}/>
           </>
-          }>
-        </Route>
+          }
+        />
+        <Route path="/property/:id" element={<PropertyDetails/>} />
       </Routes>
     </>
   )
