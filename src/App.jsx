@@ -82,23 +82,21 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={
-            <>
-              <SearchForm onSearch={filtering}/>
-              <Favourites 
-              favouriteProperties={favourites} 
-              removeFavourite={removeFavourite} 
-              clearFavourites={clearFavourites}
-              addFavourite={addFavourite}
-              />
-              <PropertyList results={results} onFavourite={addFavourite}/>
-            </>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <SearchForm onSearch={filtering}/>
+            <Favourites 
+            favouriteProperties={favourites} 
+            removeFavourite={removeFavourite} 
+            clearFavourites={clearFavourites}
+            addFavourite={addFavourite}
+            />
+            <PropertyList results={results} onFavourite={addFavourite}/>
+          </>
           }>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+        </Route>
+      </Routes>
     </>
   )
 }
