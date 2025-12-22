@@ -3,6 +3,7 @@ import './App.css';
 import SearchForm from './components/SearchForm';
 import PropertyList from './components/PropertyList';
 import Favourites from './components/Favourites';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [allProperties, setAllProperties] = useState([]);
@@ -81,14 +82,23 @@ function App() {
 
   return (
     <>
-      <SearchForm onSearch={filtering}/>
-      <Favourites 
-        favouriteProperties={favourites} 
-        removeFavourite={removeFavourite} 
-        clearFavourites={clearFavourites}
-        addFavourite={addFavourite}
-      />
-      <PropertyList results={results} onFavourite={addFavourite}/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <SearchForm onSearch={filtering}/>
+              <Favourites 
+              favouriteProperties={favourites} 
+              removeFavourite={removeFavourite} 
+              clearFavourites={clearFavourites}
+              addFavourite={addFavourite}
+              />
+              <PropertyList results={results} onFavourite={addFavourite}/>
+            </>
+          }>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
