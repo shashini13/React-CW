@@ -8,6 +8,7 @@ const PropertyList = ({results, onFavourite}) => {
 
     return (
         <div>
+            <h2>Property List</h2>
             {results.map((p) => (
             <PropertyCard
                 key={p.id}
