@@ -82,7 +82,12 @@ function App() {
   return (
     <>
       <SearchForm onSearch={filtering}/>
-      <Favourites favouriteProperties={favourites} removeFavourite={removeFavourite} clearFavourites={clearFavourites}/>
+      <Favourites 
+        favouriteProperties={favourites} 
+        removeFavourite={removeFavourite} 
+        clearFavourites={clearFavourites}
+        addFavourite={addFavourite}
+      />
       <PropertyList results={results} onFavourite={addFavourite}/>
     </>
   )
