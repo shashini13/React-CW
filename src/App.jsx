@@ -66,7 +66,7 @@ function App() {
   }; 
   
   const addFavourite = (property) => {
-    if (!favourites.find(p => p.id === property.id)) {
+    if (!favourites.some(p => p.id === property.id)) {
       setFavourites([...favourites, property]);
     }
   };
@@ -75,11 +75,15 @@ function App() {
     setFavourites(favourites.filter(p => p.id !==id));
   };
 
+  const clearFavourites = () => {
+    setFavourites([]);
+  }
+
   return (
     <>
       <SearchForm onSearch={filtering}/>
+      <Favourites favouriteProperties={favourites} removeFavourite={removeFavourite} clearFavourites={clearFavourites}/>
       <PropertyList results={results} onFavourite={addFavourite}/>
-      <Favourites favouriteProperties={favourites} removeFavourite={removeFavourite}/>
     </>
   )
 }

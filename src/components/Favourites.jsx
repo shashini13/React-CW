@@ -1,10 +1,14 @@
 import PropertyCard from "./PropertyCard";
-import PropertyList from "./PropertyList";
 
-const Favourites = ({favouriteProperties, removeFavourite}) => {
+const Favourites = ({favouriteProperties, removeFavourite, clearFavourites}) => {
     return (
         <>
         <h2>Favourite Properties</h2>
+
+        {favouriteProperties.length > 0 && (
+            <button onClick={clearFavourites}>Clear Favourites</button>
+        )}
+
         {favouriteProperties.length === 0 ? (
             <p>You have no favourite properties yet</p>
         ) : (

@@ -1,4 +1,4 @@
-const PropertyCard = ({p, onFavourite}) => {
+const PropertyCard = ({p, onFavourite, isFavourite}) => {
     return (
         <div className="property-card">
             <img src={p.picture}></img>
@@ -6,7 +6,8 @@ const PropertyCard = ({p, onFavourite}) => {
             <p>{p.bedrooms} Bedrooms</p>
             <p>Location: {p.location}</p>
             <button>View Details</button>
-            <button onClick={() => onFavourite(p)}>Add to favourites</button>
+            <button onClick={() => onFavourite(p)}>
+                {isFavourite ? "Remove" : "Add to favourites"}</button>
         </div>
     )
 };
