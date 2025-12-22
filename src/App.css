@@ -20,3 +20,14 @@
   width: 250px;
   border-radius: 10px;
 }
+
+.add-drag-drop {
+  border: 2px dashed grey;
+  padding: 5px;          
+}
+
+.remove-drag-drop {
+  border: 2px dashed red;
+  padding: 10px;
+  color: red;
+}
