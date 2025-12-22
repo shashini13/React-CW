@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import SearchForm from './components/SearchForm';
 import PropertyList from './components/PropertyList';
+import Favourites from './components/Favourites';
 
 function App() {
-
   const [allProperties, setAllProperties] = useState([]);
   const [results, setResults] = useState([]);
+  const [favourites, setFavourites] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -62,12 +63,23 @@ function App() {
     }
             
     setResults(filtered);
-  };  
+  }; 
+  
+  const addFavourite = (property) => {
+    if (!favourites.find(p => p.id === property.id)) {
+      setFavourites([...favourites, property]);
+    }
+  };
+
+  const removeFavourite = (id) => {
+    setFavourites(favourites.filter(p => p.id !==id));
+  };
 
   return (
     <>
       <SearchForm onSearch={filtering}/>
-      <PropertyList results={results}/>
+      <PropertyList results={results} onFavourite={addFavourite}/>
+      <Favourites favouriteProperties={favourites} removeFavourite={removeFavourite}/>
     </>
   )
 }

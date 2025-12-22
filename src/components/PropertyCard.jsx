@@ -1,4 +1,4 @@
-const PropertyCard = ({p}) => {
+const PropertyCard = ({p, onFavourite}) => {
     return (
         <div className="property-card">
             <img src={p.picture}></img>
