@@ -1,6 +1,6 @@
 const PropertyCard = ({p}) => {
     return (
-        <div>
+        <div className="property-card">
             <img src={p.image}></img>
             <h3>{p.type} - £{p.price.toLocaleString()}</h3>
             <p>{p.bedrooms} Bedrooms</p>
