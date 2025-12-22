@@ -6,6 +6,7 @@ const PropertyCard = ({p}) => {
             <p>{p.bedrooms} Bedrooms</p>
             <p>Location: {p.location}</p>
             <button>View Details</button>
+            <button onClick={() => onFavourite(p)}>Add to favourites</button>
         </div>
     )
 };
