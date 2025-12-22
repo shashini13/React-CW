@@ -1,3 +1,4 @@
+import PropertyCard from "./PropertyCard";
 import PropertyList from "./PropertyList";
 
 const Favourites = ({favouriteProperties, removeFavourite}) => {
@@ -7,14 +8,16 @@ const Favourites = ({favouriteProperties, removeFavourite}) => {
         {favouriteProperties.length === 0 ? (
             <p>You have no favourite properties yet</p>
         ) : (
-            <ul>
+            <div>
                 {favouriteProperties.map(p => (
-                    <li key={p.id}>
-                        {p.type} - £{p.price.toLocaleString()}
-                        <button onClick={() => removeFavourite(p.id)}>Remove</button>
-                    </li>
+                    <PropertyCard
+                        key={p.id}
+                        p={p}
+                        onFavourite={() => removeFavourite(p.id)} 
+                        isFavourite={true}
+                    />
                 ))}
-            </ul>
+            </div>
         )}
         </>
     )
