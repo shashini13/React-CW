@@ -90,13 +90,13 @@
             "postcode":"RG1",
 			"picture":"images/prop4pic1small.jpg",
             "images": [
-                "images/prop4pic1small.png",
-                "images/prop4pic2small.png",
-                "images/prop4pic3small.png",
-                "images/prop4pic4small.png",
-                "images/prop4pic5small.png",
-                "images/prop4pic6small.png",
-                "images/prop4pic7small.png"
+                "images/prop4pic1small.jpg",
+                "images/prop4pic2small.jpg",
+                "images/prop4pic3small.jpg",
+                "images/prop4pic4small.jpg",
+                "images/prop4pic5small.jpg",
+                "images/prop4pic6small.jpg",
+                "images/prop4pic7small.jpg"
             ],
 			"url":"properties/prop4.html",
             "added": {
