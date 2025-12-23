@@ -10,9 +10,11 @@ const PropertyDetails = ({allProperties}) => {
         return <p>Loading property details...</p>
     }
 
-    const images = [
-        {original: "/images/prop1pic1small.png", thumbnail: "/images/prop1pic1small.png"}
-    ]
+    const images = property.images.map(image => ({
+        original: `/${image}`,
+        thumbnail: `/${image}`
+    }));
+    
 
     return (
         <div>
