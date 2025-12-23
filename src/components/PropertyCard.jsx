@@ -17,11 +17,12 @@ const PropertyCard = ({p, onFavourite, isFavourite=false, draggable=true}) => {
             <h3>{p.type} - £{p.price.toLocaleString()}</h3>
             <p>{p.bedrooms} Bedrooms</p>
             <p>Location: {p.location}</p>
+            <p>Description: {p.smallDescription}</p>
 
             <Link to={`/property/${p.id}`}>
                 <button>View Details</button>
             </Link>
-            
+
             <button onClick={() => onFavourite(p)}>
                 {isFavourite ? "Remove" : "Add to favourites"}</button>
         </div>
