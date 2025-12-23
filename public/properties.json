@@ -60,18 +60,19 @@
             "bedrooms":5,
 			"price":1500000,
 			"tenure":"Leasehold",
-			"description":"Stunning five bedroom detached home featuring high ceilings and extensive garden space. <br>This elegant property offers a spacious reception area filled with natural light, leading into a beautifully designed open-plan kitchen and dining room ideal for modern family living. Each bedroom is generously sized, with the principal suite enjoying its own private en-suite and ample wardrobe space. The home also includes a contemporary family bathroom, a separate utility area, and plenty of storage throughout. Outside, the expansive garden provides a perfect setting for outdoor entertaining, relaxing, or future landscaping plans. Finished to an excellent standard and located in a desirable neighbourhood, this property offers a rare opportunity to experience comfort, space, and refined living...",
+			"description":"Stunning five bedroom detached home featuring high ceilings and extensive garden space. This elegant property offers a spacious reception area filled with natural light, leading into a beautifully designed open-plan kitchen and dining room ideal for modern family living. Each bedroom is generously sized, with the principal suite enjoying its own private en-suite and ample wardrobe space. The home also includes a contemporary family bathroom, a separate utility area, and plenty of storage throughout. Outside, the expansive garden provides a perfect setting for outdoor entertaining, relaxing, or future landscaping plans. Finished to an excellent standard and located in a desirable neighbourhood, this property offers a rare opportunity to experience comfort, space, and refined living...",
 			"location":"12 Meadow View, Guildford, Surrey",
             "postcode":"GU2",
 			"picture":"images/prop3pic1small.jpg",
             "images": [
-                "images/prop3pic1small.png",
-                "images/prop3pic2small.png",
-                "images/prop3pic3small.png",
-                "images/prop3pic4small.png",
-                "images/prop3pic5small.png",
-                "images/prop3pic6small.png",
-                "images/prop3pic7small.png"
+                "images/prop3pic1small.jpg",
+                "images/prop3pic2small.jpg",
+                "images/prop3pic3small.jpg",
+                "images/prop3pic4small.jpg",
+                "images/prop3pic5small.jpg",
+                "images/prop3pic6small.jpg",
+                "images/prop3pic7small.jpg",
+                "images/prop3pic8small.jpg"
             ],
 			"url":"properties/prop3.html",
             "added": {
