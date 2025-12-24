@@ -1,8 +1,57 @@
 /*SearchFrom.jsx*/
 .search-form {
-  background-color: rgb(213, 88, 88);
-  padding: 10px;
+  background-color: rgb(228, 219, 219);
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
+.search-form-label {
+  font-weight: 600;
+}
+
+.property-type-input-div .css-13cymwt-control {
+  width: 100%;
+}
+
+.price-bedroom-div {
+  display: flex;
+  gap: 20px;
+}
+
+.date-postcode-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.date-postcode-div div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.date-postcode-div input {
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(208, 204, 204);
+}
+
+.price-input-div .css-13cymwt-control {
+  width: 100%;
+}
+
+.css-13cymwt-control {
+  margin: 2px 0 10px 0;
+}
+
+.search-form button[type="submit"] {
+  background-color: rgb(194, 218, 237);
+  border: 1px solid black;
 }
 
 
