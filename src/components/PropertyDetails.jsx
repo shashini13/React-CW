@@ -32,7 +32,7 @@ const PropertyDetails = ({allProperties}) => {
 
                 <TabPanel><ReactImageGallery items={images}/></TabPanel>
                 <TabPanel><p>{property.description}</p></TabPanel>
-                <TabPanel><p>floor plan img</p></TabPanel>
+                <TabPanel><img src={`/${property.floorPlan}`}></img></TabPanel>
                 <TabPanel><p>google map iframe</p></TabPanel>
             </Tabs>
 
