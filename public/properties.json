@@ -164,6 +164,7 @@
                 "images/prop6pic7small.png",
                 "images/prop6pic8small.png"
             ],
+            "floorPlan":"images/floorplans/prop6.png",
 			"url":"properties/prop6.html",
             "added": {
                 "month":"July",
@@ -191,6 +192,7 @@
                 "images/prop7pic6small.png",
                 "images/prop7pic7small.png"
             ],
+            "floorPlan":"images/floorplans/prop7.png",
 			"url":"properties/prop7.html",
             "added": {
                 "month":"June",
