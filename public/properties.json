@@ -21,6 +21,7 @@
                 "images/prop1pic7small.png",
                 "images/prop1pic8small.png"
             ],
+            "floorPlan":"images/floorplans/prop1.png",
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
@@ -49,6 +50,7 @@
                 "images/prop2pic7small.jpg",
                 "images/prop2pic8small.jpg"
             ],
+            "floorPlan":"images/floorplans/prop2.png",
 			"url":"properties/prop2.html",
             "added": {
                 "month":"September",
@@ -77,6 +79,7 @@
                 "images/prop3pic7small.jpg",
                 "images/prop3pic8small.jpg"
             ],
+            "floorPlan":"images/floorplans/prop3.jpg",
 			"url":"properties/prop3.html",
             "added": {
                 "month":"December",
@@ -104,6 +107,7 @@
                 "images/prop4pic6small.jpg",
                 "images/prop4pic7small.jpg"
             ],
+            "floorPlan":"images/floorplans/prop4.png",
 			"url":"properties/prop4.html",
             "added": {
                 "month":"October",
@@ -131,6 +135,7 @@
                 "images/prop5pic6small.png",
                 "images/prop5pic7small.png"
             ],
+            "floorPlan":"images/floorplans/prop5.png",
 			"url":"properties/prop5.html",
             "added": {
                 "month":"May",
