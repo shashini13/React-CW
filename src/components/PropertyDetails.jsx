@@ -29,10 +29,15 @@ const PropertyDetails = ({allProperties}) => {
                     <Tab>Floor Plan</Tab>
                     <Tab>Map</Tab>
                 </TabList>
+
+                <TabPanel><ReactImageGallery items={images}/></TabPanel>
+                <TabPanel><p>{property.description}</p></TabPanel>
+                <TabPanel><p>floor plan img</p></TabPanel>
+                <TabPanel><p>google map iframe</p></TabPanel>
             </Tabs>
 
-            <ReactImageGallery items={images}/>
-            <p>{property.description}</p>
+            
+            
             
         </div>
     );
