@@ -9,13 +9,15 @@ const PropertyList = ({results, onFavourite}) => {
     return (
         <div>
             <h2>Property List</h2>
-            {results.map((p) => (
-            <PropertyCard
-                key={p.id}
-                p = {p}
-                onFavourite={onFavourite}
-            />
-            ))}
+                <div className="property-list">
+                    {results.map((p) => (
+                    <PropertyCard
+                        key={p.id}
+                        p = {p}
+                        onFavourite={onFavourite}
+                    />
+                    ))}
+                </div>
         </div>
     );
 }
