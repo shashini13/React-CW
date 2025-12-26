@@ -38,7 +38,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                     )}
 
                     {favouriteProperties.length === 0 ? (
-                        <p>You have no favourite properties yet</p>
+                        <p>Drag here to add to favourites</p>
                     ) : (
                         <div>
                             {favouriteProperties.map(p => (
@@ -59,7 +59,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                     onDrop={handleDropRemove}
                     onDragOver={handleDragOver}
                 >
-                    Drag here to remove a favourite
+                    <p>Drag here to remove a favourite</p>
                 </div>
             </div>
 
