@@ -62,7 +62,7 @@
 /*PropertyCard.jsx*/
 .property-card {
   background-color: rgba(68, 94, 93, 0.235);
-  margin: 10px;
+  margin: 0 10px 10px 10px;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -79,6 +79,17 @@
   margin: 0;
 }
 
+.property-card-bedroom-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.property-card-bedroom-div p {
+  margin: 0;
+}
+
 .property-card-h2 {
   font-size: larger;
   margin: 5px 0 0 0;
@@ -86,16 +97,15 @@
 
 .add-remove-section {
   display: flex;
+  text-align: center;
 }
 
 .add-drag-drop {
-  border: 2px dashed grey;
-  padding: 5px;          
+  border: 2px dashed grey; 
 }
 
 .remove-drag-drop {
   border: 2px dashed red;
-  padding: 10px;
   color: red;
 }
 
@@ -106,7 +116,9 @@
 /*Favourites*/
 .favourites {
   width: 100%;
-
+  position: sticky;
+  top: 0;          
+  align-self: flex-start;    
 }
 
 /*PropertyList*/
@@ -120,5 +132,6 @@
 /*Favourties and PropertyList displaying section*/
 .below-search-form-section {
   display: flex;
-
+  gap: 20px;
+  align-items: flex-start;
 }
