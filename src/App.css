@@ -54,20 +54,38 @@
   border: 1px solid black;
 }
 
+/*root-body*/
+#root {
+  width: 100%;
+}
 
 /*PropertyCard.jsx*/
 .property-card {
   background-color: rgba(68, 94, 93, 0.235);
   margin: 10px;
   padding: 10px;
-  text-align: center;
-  width: 40%;
   border-radius: 10px;
+  text-align: center;
+  width: 400px;
 }
 
 .property-card img {
-  width: 250px;
+  width: 380px;
+  height: 230px;
   border-radius: 10px;
+}
+
+.property-card-location-p {
+  margin: 0;
+}
+
+.property-card-h2 {
+  font-size: larger;
+  margin: 5px 0 0 0;
+}
+
+.add-remove-section {
+  display: flex;
 }
 
 .add-drag-drop {
@@ -79,4 +97,28 @@
   border: 2px dashed red;
   padding: 10px;
   color: red;
+}
+
+.property-card-btn {
+  margin: 5px;
+}
+
+/*Favourites*/
+.favourites {
+  width: 100%;
+
+}
+
+/*PropertyList*/
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 15px;
+}
+
+/*Favourties and PropertyList displaying section*/
+.below-search-form-section {
+  display: flex;
+
 }
