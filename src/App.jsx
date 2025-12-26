@@ -87,13 +87,15 @@ function App() {
         <Route path="/" element={
           <>
             <SearchForm onSearch={filtering}/>
-            <Favourites 
-            favouriteProperties={favourites} 
-            removeFavourite={removeFavourite} 
-            clearFavourites={clearFavourites}
-            addFavourite={addFavourite}
-            />
-            <PropertyList results={results} onFavourite={addFavourite}/>
+            <div className="below-search-form-section">
+              <PropertyList results={results} onFavourite={addFavourite}/>
+              <Favourites 
+                favouriteProperties={favourites} 
+                removeFavourite={removeFavourite} 
+                clearFavourites={clearFavourites}
+                addFavourite={addFavourite}
+              />
+            </div>
           </>
           }
         />
