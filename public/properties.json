@@ -23,6 +23,7 @@
             ],
             "floorPlan":"images/floorplans/prop1.png",
 			"url":"properties/prop1.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.675313058671!2d0.07950997564857058!3d51.39064521922723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1766719654192!5m2!1sen!2slk",
             "added": {
                 "month":"October",
                 "day":12,
@@ -52,6 +53,7 @@
             ],
             "floorPlan":"images/floorplans/prop2.png",
 			"url":"properties/prop2.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.7831791263978!2d0.07069645138367281!3d51.37341673378646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1766720391485!5m2!1sen!2slk",
             "added": {
                 "month":"September",
                 "day":14,
@@ -81,6 +83,7 @@
             ],
             "floorPlan":"images/floorplans/prop3.jpg",
 			"url":"properties/prop3.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.0184668842036!2d-0.5572770595148653!3d51.29901401136581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d9d3e3515f5f%3A0x9a7404fe7c9efc3!2s12%20Meadow%20View%2C%20Woking%20GU22%209AZ%2C%20UK!5e0!3m2!1sen!2slk!4v1766720528757!5m2!1sen!2slk",
             "added": {
                 "month":"December",
                 "day":4,
@@ -109,6 +112,7 @@
             ],
             "floorPlan":"images/floorplans/prop4.png",
 			"url":"properties/prop4.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.2750056212767!2d-0.8536304243495446!3d51.41637471735021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487683e2c37b76dd%3A0x9fce6ca34a876a1c!2s7%2C%2028%20Brookside%2C%20Wokingham%20RG41%202SU%2C%20UK!5e0!3m2!1sen!2slk!4v1766722890162!5m2!1sen!2slk",
             "added": {
                 "month":"October",
                 "day":26,
@@ -137,6 +141,7 @@
             ],
             "floorPlan":"images/floorplans/prop5.png",
 			"url":"properties/prop5.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.055525579576!2d-0.3232601200023743!3d51.43877415339621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c7af3f12941%3A0xee33321416dd45c2!2s14%20Willow%20Bank%2C%20Richmond%20TW10%207QX%2C%20UK!5e0!3m2!1sen!2slk!4v1766723034989!5m2!1sen!2slk",
             "added": {
                 "month":"May",
                 "day":12,
@@ -166,6 +171,7 @@
             ],
             "floorPlan":"images/floorplans/prop6.png",
 			"url":"properties/prop6.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.854583296659!2d-1.2548110243244268!3d51.75398259266097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6ae9d1dc84d%3A0x8578b77c5295071c!2s9%20Queen's%20Ln%2C%20Oxford%20OX1%203BN%2C%20UK!5e0!3m2!1sen!2slk",
             "added": {
                 "month":"July",
                 "day":20,
@@ -194,6 +200,7 @@
             ],
             "floorPlan":"images/floorplans/prop7.png",
 			"url":"properties/prop7.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.067411753425!2d-0.34677022432336435!3d51.76837479160618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487638d2a1419f31%3A0x651cf0c2eb5d974f!2s6%20Maple%20Ave%2C%20St%20Albans%20AL3%206EQ%2C%20UK!5e0!3m2!1sen!2slk!4v1766723419105!5m2!1sen!2slk",
             "added": {
                 "month":"June",
                 "day":14,
