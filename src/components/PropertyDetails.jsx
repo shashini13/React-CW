@@ -33,7 +33,18 @@ const PropertyDetails = ({allProperties}) => {
                 <TabPanel><ReactImageGallery items={images}/></TabPanel>
                 <TabPanel><p>{property.description}</p></TabPanel>
                 <TabPanel><img src={`/${property.floorPlan}`}></img></TabPanel>
-                <TabPanel><p>google map iframe</p></TabPanel>
+                <TabPanel>
+                    <iframe 
+                        src={property.iframeURL}
+                        title="Property Location Map"
+                        width="600" 
+                        height="400" 
+                        style={{border:0}} 
+                        allowfullscreen 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </TabPanel>
             </Tabs>
 
             
