@@ -36,10 +36,8 @@ const PropertyDetails = ({allProperties}) => {
                 <TabPanel>
                     <iframe 
                         src={property.iframeURL}
-                        title="Property Location Map"
-                        width="600" 
-                        height="400" 
-                        style={{border:0}} 
+                        className="map-iframe"
+                        title="Property Location Map"                        
                         allowfullscreen 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">

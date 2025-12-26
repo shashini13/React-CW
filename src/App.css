@@ -139,3 +139,10 @@
   gap: 20px;
   align-items: flex-start;
 }
+
+/*PropertyDetails*/
+.map-iframe {
+  border: 0;
+  width: 600px;
+  height: 400px;
+}
