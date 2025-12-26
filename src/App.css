@@ -109,6 +109,10 @@
   color: red;
 }
 
+.add-drag-drop, .remove-drag-drop {
+  padding: 10px;
+}
+
 .property-card-btn {
   margin: 5px;
 }
