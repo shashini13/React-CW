@@ -66,12 +66,13 @@
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  width: 400px;
+  width: 40%;
+  min-width: 340px;
 }
 
 .property-card img {
-  width: 380px;
-  height: 230px;
+  width: 80%;
+  height: 40%;
   border-radius: 10px;
 }
 
@@ -261,13 +262,13 @@
   /*below search form*/
   .below-search-form-section {
     flex-direction: column;
+    align-items: center;
   }
 
   /*property list*/
   .property-list-div {
    margin: 0;
    width: 90%;
-   margin: 0 auto;
   }
 
   .property-list-content {
@@ -296,6 +297,7 @@
   }
 
   .favourites-btn {
+    display: block;
     position: fixed;
     bottom: 20px;
     right: 20px;
