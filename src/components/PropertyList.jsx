@@ -6,9 +6,9 @@ const PropertyList = ({results, onFavourite}) => {
     };
 
     return (
-        <div>
+        <div className="property-list-div">
             <h2>Property List</h2>
-                <div className="property-list">
+                <div className="property-list-content">
                     {results.map((p) => (
                     <PropertyCard
                         key={p.id}
