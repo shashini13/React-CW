@@ -24,7 +24,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
 
 
     return (
-        <div className="favourites">
+        <div id="favourites" className="favourites">
             <h2>Favourite Properties</h2>
 
             <div className="add-remove-section">

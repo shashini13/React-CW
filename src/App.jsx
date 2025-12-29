@@ -89,6 +89,20 @@ function App() {
             <SearchForm onSearch={filtering}/>
             <div className="below-search-form-section">
               <PropertyList results={results} onFavourite={addFavourite}/>
+              {favourites.length > 0 && (
+                <button
+                  className="favourites-btn"
+                  onClick={() => {
+                    const favSection = document.getElementById("favourites");
+                    if (favSection) {
+                      favSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  View Favourites
+                </button>
+              )}
+
               <Favourites 
                 favouriteProperties={favourites} 
                 removeFavourite={removeFavourite} 
