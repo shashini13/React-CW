@@ -3,6 +3,7 @@ import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { FaBed, FaBath, FaHome, FaClipboardCheck } from "react-icons/fa";
 
 const PropertyDetails = ({allProperties}) => {
     const {id} = useParams();
@@ -19,32 +20,62 @@ const PropertyDetails = ({allProperties}) => {
     
 
     return (
-        <div>
-            <h2>{property.type} - £{property.price.toLocaleString()}</h2>
+        <div className="property-details-div">
+            <div className="property-details-header-gallery">
+                <h2>{property.type} - £{property.price.toLocaleString()}</h2>
+                <h3>{property.location}</h3>
+                <div className="image-gallery">
+                    <ReactImageGallery items={images}/>
+                </div>
+            </div>
             
-            <Tabs>
-                <TabList>
-                    <Tab>Images</Tab>
-                    <Tab>Description</Tab>
-                    <Tab>Floor Plan</Tab>
-                    <Tab>Map</Tab>
-                </TabList>
+            <div className="property-details-small-content">
+                <p>{property.smallDescription}</p>
+                <div className="property-details-summary">
+                    <div className="summary-item">
+                        <p className="heading"><FaHome /> Property Type</p>
+                        <p className="value">{property.type}</p>
+                    </div>
 
-                <TabPanel><ReactImageGallery items={images}/></TabPanel>
-                <TabPanel><p>{property.description}</p></TabPanel>
-                <TabPanel><img src={`/${property.floorPlan}`}></img></TabPanel>
-                <TabPanel>
-                    <iframe 
-                        src={property.iframeURL}
-                        className="map-iframe"
-                        title="Property Location Map"                        
-                        allowfullscreen 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </TabPanel>
-            </Tabs>
+                    <div className="summary-item">
+                        <p className="heading"><FaClipboardCheck /> Tenure</p>
+                        <p className="value">{property.tenure}</p>
+                    </div>
 
+                    <div className="summary-item">
+                        <p className="heading"><FaBed /> Bedrooms</p>
+                        <p className="value">{property.bedrooms}</p>
+                    </div>
+
+                    <div className="summary-item">
+                        <p className="heading"><FaBath /> Bathrooms</p>
+                        <p className="value">{property.bathrooms}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="property-details-tablist">
+                <Tabs>
+                    <TabList className="tab-list">
+                        <Tab>Description</Tab>
+                        <Tab>Floor Plan</Tab>
+                        <Tab>Map</Tab>
+                    </TabList>
+
+                    <TabPanel><p>{property.description}</p></TabPanel>
+                    <TabPanel><img className="property-floor-plan" src={`/${property.floorPlan}`}></img></TabPanel>
+                    <TabPanel>
+                        <iframe 
+                            src={property.iframeURL}
+                            className="map-iframe"
+                            title="Property Location Map"                        
+                            allowFullScreen 
+                            loading="lazy" 
+                            referrerPolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </TabPanel>
+                </Tabs>
+            </div>
             
             
             
