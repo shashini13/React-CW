@@ -95,6 +95,22 @@
   margin: 5px 0 0 0;
 }
 
+.property-card-btn {
+  margin: 5px;
+}
+
+/*Favourites*/
+.favourites {
+  flex: 1;
+  position: sticky;
+  top: 0;          
+  align-self: flex-start;    
+}
+
+.favourites h2 {
+  margin-top: 5px;
+}
+
 .add-remove-section {
   display: flex;
   text-align: center;
@@ -113,25 +129,15 @@
   padding: 10px;
 }
 
-.property-card-btn {
-  margin: 5px;
-}
-
-/*Favourites*/
-.favourites {
-  width: 100%;
-  position: sticky;
-  top: 0;          
-  align-self: flex-start;    
-}
-
-.favourites h2 {
-  margin-top: 5px;
+.favourites-btn {
+  display: none;
 }
 
 /*PropertyList*/
 .property-list-div {
   margin-left: 30px;
+  box-sizing: border-box;
+  flex: 3;
 }
 
 .property-list-div h2 {
@@ -235,4 +241,69 @@
 .map-iframe {
   border: 0;
   height: 400px;
+}
+
+@media (max-width: 600px) {
+  /*search form*/ 
+  .search-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .price-bedroom-div, .date-postcode-div {
+    flex-direction: column;
+  }
+
+  .price-bedroom-div {
+    gap: 10px;
+  }
+
+  /*below search form*/
+  .below-search-form-section {
+    flex-direction: column;
+  }
+
+  /*property list*/
+  .property-list-div {
+   margin: 0;
+   width: 90%;
+   margin: 0 auto;
+  }
+
+  .property-list-content {
+    justify-content: center;
+  }
+  
+  /*property card*/
+  .property-card {
+    margin: 0;
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+  }
+
+  .property-card img {
+    width: 80%;
+    height: 45%;
+  }
+
+  /*favourites*/
+  .add-remove-section {
+    flex-direction: column;
+  }
+
+  .add-drag-drop {
+    margin: 0 auto;
+  }
+
+  .favourites-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 1px solid black;
+    z-index: 1000;
+    
+  }
+
+  /**/
 }
