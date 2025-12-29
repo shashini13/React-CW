@@ -141,10 +141,6 @@
 }
 
 /*PropertyDetails*/
-.property-details-div {
-  
-}
-
 .property-details-header-gallery, .property-details-small-content, .property-details-tablist {
   background-color: whitesmoke;
   width: 1000px;
@@ -156,7 +152,11 @@
 
 .image-gallery {
   margin: 0 auto;
-  width: 600px
+  width: 700px
+}
+
+.image-gallery-svg {
+  width: 40px !important;
 }
 
 .property-details-div > p:first-of-type  {
@@ -167,6 +167,7 @@
 .property-details-div h2, h3 {
   text-align: center;
   margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .property-details-summary {
