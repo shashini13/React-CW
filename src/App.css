@@ -62,7 +62,7 @@
 /*PropertyCard.jsx*/
 .property-card {
   background-color: rgba(68, 94, 93, 0.235);
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 10px 0;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -125,12 +125,23 @@
   align-self: flex-start;    
 }
 
+.favourites h2 {
+  margin-top: 5px;
+}
+
 /*PropertyList*/
-.property-list {
+.property-list-div {
+  margin-left: 30px;
+}
+
+.property-list-div h2 {
+  margin-top: 5px;
+}
+
+.property-list-content {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-left: 15px;
 }
 
 /*Favourties and PropertyList displaying section*/
@@ -138,6 +149,7 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 /*PropertyDetails*/
@@ -145,7 +157,7 @@
   width: 1000px;
   border-radius: 5px;
   box-shadow: 1px 2px 5px rgb(214, 210, 210);
-  margin: 10px auto;
+  margin: 25px auto;
   padding: 10px;
 }
 
@@ -166,9 +178,9 @@
   width: 40px !important;
 }
 
-.property-details-div > p:first-of-type  {
+.property-details-small-content > p:first-of-type  {
   text-align: center;
-  margin: 25px 0;
+  margin: 0 0 10px 0;
 }
 
 .property-details-div h2, h3 {
@@ -183,7 +195,7 @@
   border: 1px solid rgb(182, 176, 176);
   border-radius: 5px;
   width: 80%;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .summary-item {
