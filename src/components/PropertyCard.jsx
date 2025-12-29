@@ -25,7 +25,7 @@ const PropertyCard = ({p, onFavourite, isFavourite=false, draggable=true}) => {
            
             <p>{p.smallDescription}</p>
 
-            <Link to={`/property/${p.id}`}>
+            <Link to={p.url}>
                 <button className="property-card-btn">View Details</button>
             </Link>
 

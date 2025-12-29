@@ -99,7 +99,7 @@ function App() {
           </>
           }
         />
-        <Route path="/property/:id" element={<PropertyDetails allProperties={allProperties}/>} />
+        <Route path="/properties/:id.html" element={<PropertyDetails allProperties={allProperties}/>} />
       </Routes>
     </>
   )
