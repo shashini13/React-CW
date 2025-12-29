@@ -63,7 +63,7 @@ const PropertyDetails = ({allProperties}) => {
                     </TabList>
 
                     <TabPanel><p>{property.description}</p></TabPanel>
-                    <TabPanel><img className="property-floor-plan" src={`/${property.floorPlan}`}></img></TabPanel>
+                    <TabPanel><img className="property-floor-plan-img" src={`/${property.floorPlan}`}></img></TabPanel>
                     <TabPanel>
                         <iframe 
                             src={property.iframeURL}
