@@ -161,7 +161,7 @@
 
 /*PropertyDetails*/
 .property-details-header-gallery, .property-details-small-content, .property-details-tablist {
-  width: 1000px;
+  width: 90%;
   border-radius: 5px;
   box-shadow: 1px 2px 5px rgb(214, 210, 210);
   margin: 25px auto;
@@ -178,11 +178,11 @@
 
 .image-gallery {
   margin: 0 auto;
-  width: 700px
+  width: 80%;
 }
 
 .image-gallery-svg {
-  width: 40px !important;
+  width: 70% !important;
 }
 
 .property-details-small-content > p:first-of-type  {
@@ -201,7 +201,7 @@
   grid-template-columns: repeat(4, 1fr); 
   border: 1px solid rgb(182, 176, 176);
   border-radius: 5px;
-  width: 80%;
+  width: 90%;
   margin: 5px auto;
 }
 
@@ -307,5 +307,14 @@
     
   }
 
-  /**/
+  /*property details*/
+  .property-details-summary {
+    width: 60%;
+    grid-template-columns: 1fr;
+  }
+
+
+  
+
+ 
 }
