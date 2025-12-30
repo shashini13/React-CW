@@ -1,0 +1,217 @@
+{
+	"properties": [
+        {
+            "id":"prop1",
+			"type":"House",
+            "bedrooms":3,
+            "bathrooms":"1-Family Bath",
+			"price":750000,
+			"tenure":"Freehold",
+            "smallDescription":"Three-bedroom semi-detached family home close to Petts Wood station, local amenities, and green spaces, with spacious living areas and modern features.",
+			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
+            "postcode":"BR5",
+			"picture":"images/prop1pic1small.png",
+            "images": [
+                "images/prop1pic1small.png",
+                "images/prop1pic2small.png",
+                "images/prop1pic3small.png",
+                "images/prop1pic4small.png",
+                "images/prop1pic5small.png",
+                "images/prop1pic6small.png",
+                "images/prop1pic7small.png",
+                "images/prop1pic8small.png"
+            ],
+            "floorPlan":"images/floorplans/prop1.png",
+			"url":"properties/prop1.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.675313058671!2d0.07950997564857058!3d51.39064521922723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1766719654192!5m2!1sen!2slk",
+            "added": {
+                "month":"October",
+                "day":12,
+                "year":2022
+            }
+        },
+		{
+            "id":"prop2",
+			"type":"Flat",
+            "bedrooms":2,
+            "bathrooms":"1",
+			"price":399995,
+			"tenure":"Freehold",
+            "smallDescription":"Modern two-bedroom garden flat with open-plan living, bi-folding doors to a private courtyard, and stylish contemporary finishes throughout.",
+			"description":"Presented in excellent decorative order throughout is this two double bedroom and bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.This apartment being only five years old, is still under a 10 year building guarantee...",
+			"location":"Crofton Road Orpington BR6",
+            "postcode":"BR6",
+			"picture":"images/prop2pic1small.jpg",
+            "images": [
+                "images/prop2pic1small.jpg",
+                "images/prop2pic2small.jpg",
+                "images/prop2pic3small.jpg",
+                "images/prop2pic4small.jpg",
+                "images/prop2pic5small.jpg",
+                "images/prop2pic6small.jpg",
+                "images/prop2pic7small.jpg",
+                "images/prop2pic8small.jpg"
+            ],
+            "floorPlan":"images/floorplans/prop2.png",
+			"url":"properties/prop2.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.7831791263978!2d0.07069645138367281!3d51.37341673378646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1766720391485!5m2!1sen!2slk",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2022
+            }
+        },
+        {
+            "id":"prop3",
+			"type":"House",
+            "bedrooms":5,
+            "bathrooms": "3-Family Baths",
+			"price":1500000,
+			"tenure":"Leasehold",
+            "smallDescription":"Elegant five-bedroom detached residence featuring high ceilings, expansive living space, a stylish open-plan kitchen, and a beautifully sized garden.",
+			"description":"Stunning five bedroom detached home featuring high ceilings and extensive garden space. This elegant property offers a spacious reception area filled with natural light, leading into a beautifully designed open-plan kitchen and dining room ideal for modern family living. Each bedroom is generously sized, with the principal suite enjoying its own private en-suite and ample wardrobe space. The home also includes a contemporary family bathroom, two separate bathrroms, a separate utility area, and plenty of storage throughout. Outside, the expansive garden provides a perfect setting for outdoor entertaining, relaxing, or future landscaping plans. Finished to an excellent standard and located in a desirable neighbourhood, this property offers a rare opportunity to experience comfort, space, and refined living...",
+			"location":"12 Meadow View, Guildford, Surrey",
+            "postcode":"GU2",
+			"picture":"images/prop3pic1small.jpg",
+            "images": [
+                "images/prop3pic1small.jpg",
+                "images/prop3pic2small.jpg",
+                "images/prop3pic3small.jpg",
+                "images/prop3pic4small.jpg",
+                "images/prop3pic5small.jpg",
+                "images/prop3pic6small.jpg",
+                "images/prop3pic7small.jpg",
+                "images/prop3pic8small.jpg"
+            ],
+            "floorPlan":"images/floorplans/prop3.jpg",
+			"url":"properties/prop3.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.0184668842036!2d-0.5572770595148653!3d51.29901401136581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d9d3e3515f5f%3A0x9a7404fe7c9efc3!2s12%20Meadow%20View%2C%20Woking%20GU22%209AZ%2C%20UK!5e0!3m2!1sen!2slk!4v1766720528757!5m2!1sen!2slk",
+            "added": {
+                "month":"December",
+                "day":4,
+                "year":2024
+            }
+        },
+        {
+            "id":"prop4",
+			"type":"Flat",
+            "bedrooms":1,
+            "bathrooms": "1",
+			"price":250000,
+			"tenure":"Leasehold",
+            "smallDescription":"Stylish one-bedroom apartment offering modern living, low maintenance, and excellent access to shops and transport links.",
+			"description":"A modern and well-presented one bedroom apartment, ideal for first time buyers or investors. The property features a bright living area with a modern fitted kitched and a contemporary bathroom. Located within easy reach of local amenities, transportation links and shops, this apartment offers a comfortable and low-maintenance lifestyle in a convenient setting...",
+			"location":"Flat 7, 28 Brookside Court, Reading, Berkshire", 
+            "postcode":"RG1",
+			"picture":"images/prop4pic1small.jpg",
+            "images": [
+                "images/prop4pic1small.jpg",
+                "images/prop4pic2small.jpg",
+                "images/prop4pic3small.jpg",
+                "images/prop4pic4small.jpg",
+                "images/prop4pic5small.jpg",
+                "images/prop4pic6small.jpg",
+                "images/prop4pic7small.jpg"
+            ],
+            "floorPlan":"images/floorplans/prop4.png",
+			"url":"properties/prop4.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.2750056212767!2d-0.8536304243495446!3d51.41637471735021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487683e2c37b76dd%3A0x9fce6ca34a876a1c!2s7%2C%2028%20Brookside%2C%20Wokingham%20RG41%202SU%2C%20UK!5e0!3m2!1sen!2slk!4v1766722890162!5m2!1sen!2slk",
+            "added": {
+                "month":"October",
+                "day":26,
+                "year":2025
+            }
+        },
+        {
+            "id":"prop5",
+			"type":"House",
+            "bedrooms":4,
+            "bathrooms": "2",
+			"price":925000,
+			"tenure":"Freehold",
+            "smallDescription":"Beautifully presented four-bedroom Victorian terraced house featuring original period details, high ceilings, spacious reception rooms, and a private garden.",
+			"description":"Victorian terraced house with many original features. This beautifully presented four-bedroom home offers bright living spaces, high ceilings, and charming period details throughout. The property includes a generous double reception room, a well-equipped fitted kitchen with access to a private garden, and two modern bathrooms spread across the upper floors. With its character, space, and timeless style, this home provides comfortable family living in a classic Victorian setting...",
+			"location":"14 Willowbank Road, Chiswick, London", 
+            "postcode":"W4",
+			"picture":"images/prop5pic1small.png",
+            "images": [
+                "images/prop5pic1small.png",
+                "images/prop5pic2small.png",
+                "images/prop5pic3small.png",
+                "images/prop5pic4small.png",
+                "images/prop5pic5small.png",
+                "images/prop5pic6small.png",
+                "images/prop5pic7small.png"
+            ],
+            "floorPlan":"images/floorplans/prop5.png",
+			"url":"properties/prop5.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.055525579576!2d-0.3232601200023743!3d51.43877415339621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c7af3f12941%3A0xee33321416dd45c2!2s14%20Willow%20Bank%2C%20Richmond%20TW10%207QX%2C%20UK!5e0!3m2!1sen!2slk!4v1766723034989!5m2!1sen!2slk",
+            "added": {
+                "month":"May",
+                "day":12,
+                "year":2025
+            }
+        },
+        {
+            "id":"prop6",
+			"type":"House",
+            "bedrooms":6,
+            "bathrooms": "5",
+			"price":1950000,
+			"tenure":"Leasehold",
+            "smallDescription":"Impressive six-bedroom residence offering expansive entertaining space, sleek modern design, and exceptional quality throughout.",
+			"description":"Spacious six-bedroom house. This remarkable property offers expansive living areas and floor-to-ceiling windows. The house features a large reception space ideal for entertaining, a sleek contemporary kitchen with high-end appliances, and six generously sized bedrooms, including a luxurious principal suite with its own private bathroom. Additional highlights include multiple modern bathrooms, ample storage, and direct lift access for added convenience. Finished to an exceptional standard throughout, this residence delivers outstanding space, style, and exclusivity in a truly impressive setting...",
+			"location":"House 9, Queens Wharf, Oxford", 
+            "postcode":"OX1",
+			"picture":"images/prop6pic1small.jpg",
+            "images": [
+                "images/prop6pic1small.jpg",
+                "images/prop6pic2small.png",
+                "images/prop6pic3small.png",
+                "images/prop6pic4small.png",
+                "images/prop6pic5small.png",
+                "images/prop6pic6small.png",
+                "images/prop6pic7small.png",
+                "images/prop6pic8small.png"
+            ],
+            "floorPlan":"images/floorplans/prop6.png",
+			"url":"properties/prop6.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.854583296659!2d-1.2548110243244268!3d51.75398259266097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6ae9d1dc84d%3A0x8578b77c5295071c!2s9%20Queen's%20Ln%2C%20Oxford%20OX1%203BN%2C%20UK!5e0!3m2!1sen!2slk",
+            "added": {
+                "month":"July",
+                "day":20,
+                "year":2024
+            }
+        },
+        {
+            "id":"prop7",
+			"type":"Flat",
+            "bedrooms":3,
+            "bathrooms": "2",
+			"price":499000,
+			"tenure":"Freehold",
+            "smallDescription":"Charming three-bedroom flat offering bright living space, a modern fitted kitchen, well-sized rooms, and pleasant open views.",
+			"description":"Charming three-bedroom flat offering comfortable and low-maintenance living. The property features a bright lounge, a modern fitted kitchen, and well-sized bathrooms. Presented in good condition throughout, it provides a cosy and practical living environment with pleasant views, making it ideal for first-time buyers or those seeking a quiet, easy-to-manage home...",
+			"location":"6 Maple Close, St Albans, Hertfordshire", 
+            "postcode":"AL3",
+			"picture":"images/prop7pic1small.png",
+            "images": [
+                "images/prop7pic1small.png",
+                "images/prop7pic2small.png",
+                "images/prop7pic3small.png",
+                "images/prop7pic4small.png",
+                "images/prop7pic5small.png",
+                "images/prop7pic6small.png",
+                "images/prop7pic7small.png"
+            ],
+            "floorPlan":"images/floorplans/prop7.png",
+			"url":"properties/prop7.html",
+            "iframeURL":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.067411753425!2d-0.34677022432336435!3d51.76837479160618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487638d2a1419f31%3A0x651cf0c2eb5d974f!2s6%20Maple%20Ave%2C%20St%20Albans%20AL3%206EQ%2C%20UK!5e0!3m2!1sen!2slk!4v1766723419105!5m2!1sen!2slk",
+            "added": {
+                "month":"June",
+                "day":14,
+                "year":2023
+            }
+        }
+]}
