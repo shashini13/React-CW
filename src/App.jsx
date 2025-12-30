@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import PropertyList from './components/PropertyList';
 import Favourites from './components/Favourites';
@@ -83,6 +84,7 @@ function App() {
 
   return (
     <>
+    <Header/>
       <Routes>
         <Route path="/" element={
           <>
