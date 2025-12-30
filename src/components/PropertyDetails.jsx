@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -17,6 +18,10 @@ const PropertyDetails = ({allProperties}) => {
         original: `/${image}`,
         thumbnail: `/${image}`
     }));
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
     
 
     return (
