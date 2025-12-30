@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Select from 'react-select';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
+import TextField from '@mui/material/TextField';
 
 const SearchForm = ({onSearch}) => {
     const [type, setType] = useState("Any");
@@ -103,12 +104,12 @@ const SearchForm = ({onSearch}) => {
                 </div>    
 
                 <div>
-                    <label className="search-form-label">Postcode (eg: BR5)</label>
-                    <input
-                        type="text"
+                    <label>Postcode (eg: BR5)</label>
+                    <TextField
                         value={postcode}
+                        variant="outlined"
                         onChange={(code) => setPostcode(code.target.value.toUpperCase())}
-                    />  
+                    /> 
                 </div>
             </div>
 
