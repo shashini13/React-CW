@@ -1,3 +1,21 @@
+/*Header.jsx*/
+.header-div {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-div h2 {
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 180px;
+}
+
 /*SearchFrom.jsx*/
 .search-form {
   background-color: rgb(228, 219, 219);
