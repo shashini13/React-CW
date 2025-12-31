@@ -2,6 +2,24 @@
 #root {
   width: 100%;
   background-color: #fcfbfb;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #9c9c9c;
 }
 
 /*Header.jsx*/
@@ -19,6 +37,7 @@
   margin: 0;
   font-size: 40px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .logo-img {
@@ -51,7 +70,6 @@
   gap: 20px;
 }
 
-
 .min-max-price, .min-max-beds {
   display: flex;
   flex: 1;
@@ -77,6 +95,10 @@
   flex: 1;
 }
 
+.postcode-wrapper label {
+  font-weight: 600;
+}
+
 .date-wrapper {
   flex: 1;
 }
@@ -97,6 +119,11 @@
   font-weight: bold !important;
 }
 
+.react-datepicker-wrapper input:focus {
+  border: 2px solid black;
+  outline: none; 
+}
+
 .date-postcode-div input {
   padding: 10px;
   border-radius: 3px;
@@ -105,17 +132,25 @@
 
 .css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input {
   background-color: white !important;
-  border: none !important;
+  border: 1 px solid gray !important;
   height: 36px !important;
   padding: 0px !important;
 }
 
-.price-input-div .css-13cymwt-control {
-  width: 100%;
+.MuiOutlinedInput-root fieldset {
+  border: none;
 }
 
-.css-13cymwt-control {
-  margin: 2px 0 10px 0;
+.MuiOutlinedInput-root:hover fieldset {
+  border: none;
+}
+
+.MuiOutlinedInput-root.Mui-focused fieldset {
+  border: 2px solid black !important;
+}
+
+.price-input-div .css-13cymwt-control {
+  width: 100%;
 }
 
 .search-form button[type="submit"] {
@@ -125,13 +160,13 @@
 
 /*PropertyCard.jsx*/
 .property-card {
-  background-color: #dbd7d7;;
-  margin: 0 10px 10px 0;
-  padding: 10px;
+  background-color: #dbd7d7;
+  margin: 0 0 10px 0;
+  padding: 10px 10px 25px 10px;
   border-radius: 10px;
   text-align: center;
   width: 40%;
-  min-width: 340px;
+  min-width: 300px;
 }
 
 .property-card img {
@@ -169,11 +204,13 @@
   flex: 1;
   position: sticky;
   top: 0;          
-  align-self: flex-start;    
+  align-self: flex-start; 
+  margin-right: 30px; 
 }
 
 .favourites h2 {
   margin-top: 15px;
+  text-align: center;
 }
 
 .add-remove-section {
@@ -200,7 +237,7 @@
 
 /*PropertyList*/
 .property-list-div {
-  margin-left: 30px;
+  margin-left: 10px;
   box-sizing: border-box;
   margin-top: 10px;
   flex: 3;
@@ -219,7 +256,7 @@
 /*Favourties and PropertyList displaying section*/
 .below-search-form-section {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: flex-start;
   margin-top: 20px;
 }
@@ -237,25 +274,26 @@
 .property-details-header {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 87%;
 }
 
 .property-details-logo {
-  width: 13%;
+  width: 15%;
+  min-width: 120px;
 }
 
 #property-details-h1 {
-  font-size: 35px;
+
   margin: 0 auto;
 }
 
 .image-gallery {
   margin: 0 auto;
-  width: 80%;
+  max-width: 900px;
 }
 
 .image-gallery-image {
-  width: 90%;
+  width: 85% !important;
 }
 
 .image-gallery-svg {
@@ -321,7 +359,6 @@
   font-weight: 500;
 }
 
-
 .price-label {
   font-size: 18px;
   font-weight: 500;
@@ -343,9 +380,10 @@
 .map-iframe {
   border: 0;
   height: 400px;
+  min-width: 400px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 705px) {
   /*search form*/ 
   .search-form {
     width: 80%;
@@ -368,8 +406,12 @@
 
   /*property list*/
   .property-list-div {
-   margin: 0;
-   width: 90%;
+    margin: 0;
+    width: 90%;
+  }
+
+  .property-list-div h2 {
+    text-align: center;
   }
 
   .property-list-content {
@@ -379,8 +421,9 @@
   /*property card*/
   .property-card {
     margin: 0;
-    padding-bottom: 18px;
+    padding-bottom: 28px;
     margin-bottom: 10px;
+    min-width: 400px;
   }
 
   .property-card img {
@@ -389,12 +432,13 @@
   }
 
   /*favourites*/
-  .add-remove-section {
-    flex-direction: column;
+  .favourites {
+    margin: 0 auto;
+    width: 90%;
   }
 
-  .add-drag-drop {
-    margin: 0 auto;
+  .add-remove-section {
+    flex-direction: column;
   }
 
   .favourites-btn {
@@ -405,7 +449,6 @@
     background-color: rgba(255, 255, 255, 0.856);
     border: 1px solid black;
     z-index: 1000;
-    
   }
 
   /*property details*/
@@ -414,8 +457,18 @@
     grid-template-columns: 1fr;
   }
 
+  .property-details-header {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-  
+  #property-details-h1 {
+    text-align: center;
+    font-size: 30px;
+  }
 
- 
-}
+  .property-details-logo {
+    width: 25%;
+    min-width: 100px;
+  } 
+}  
