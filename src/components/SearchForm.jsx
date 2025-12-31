@@ -37,62 +37,66 @@ const SearchForm = ({onSearch}) => {
             </div>
 
             <div className="price-bedroom-div">
-                <div>
-                    <label className="search-form-label">Minimum Price (£)</label>
-                    <Select
-                        options={[
-                            {value: 100000, label: "100 000"},
-                            {value: 200000, label: "200 000"},
-                            {value: 300000, label: "300 000"},
-                            {value: 400000, label: "400 000"},
-                        ]}
-                        onChange={(selected) => setMinPrice(selected.value)}
-                        placeholder=""
-                    /> 
-                </div>
+                <div className="min-max-price">
+                    <div className="min-price">
+                        <label className="search-form-label">Minimum Price (£)</label>
+                        <Select
+                            options={[
+                                {value: 100000, label: "100 000"},
+                                {value: 200000, label: "200 000"},
+                                {value: 300000, label: "300 000"},
+                                {value: 400000, label: "400 000"},
+                            ]}
+                            onChange={(selected) => setMinPrice(selected.value)}
+                            placeholder=""
+                        /> 
+                    </div>
 
-                <div>
-                    <label className="search-form-label">Maximum Price (£)</label> 
-                    <Select
-                        options={[
-                            {value: 400000, label: "400 000"},
-                            {value: 500000, label: "500 000"},
-                            {value: 1000000, label: "1 000 000"},
-                            {value: 2000000, label: "2 000 000"},
-                        ]}
-                        onChange={(selected) => setMaxPrice(selected.value)}
-                        placeholder=""
-                    /> 
+                    <div className="max-price">
+                        <label className="search-form-label">Maximum Price (£)</label> 
+                        <Select
+                            options={[
+                                {value: 400000, label: "400 000"},
+                                {value: 500000, label: "500 000"},
+                                {value: 1000000, label: "1 000 000"},
+                                {value: 2000000, label: "2 000 000"},
+                            ]}
+                            onChange={(selected) => setMaxPrice(selected.value)}
+                            placeholder=""
+                        /> 
+                    </div>
                 </div>
             
-                <div>
-                    <label className="search-form-label">Minimum Bedrooms</label> 
-                    <Select
-                        options={[
-                            {value: 1, label: "1"},
-                            {value: 2, label: "2"},
-                            {value: 3, label: "3"},
-                            
-                        ]}
-                        onChange={(selected) => setMinBedrooms(selected.value)}
-                        placeholder=""
-                    /> 
-                </div>
+                <div className="min-max-beds">
+                    <div className="min-beds">
+                        <label className="search-form-label">Minimum Bedrooms</label> 
+                        <Select
+                            options={[
+                                {value: 1, label: "1"},
+                                {value: 2, label: "2"},
+                                {value: 3, label: "3"},
+                                
+                            ]}
+                            onChange={(selected) => setMinBedrooms(selected.value)}
+                            placeholder=""
+                        /> 
+                    </div>
 
-                <div>
-                    <label className="search-form-label">Maximum Bedrooms</label> 
-                    <Select
-                        options={[
-                            {value: 3, label: "3"},
-                            {value: 4, label: "4"},
-                            {value: 5, label: "5"},
-                            
-                        ]}
-                        onChange={(selected) => setMaxBedrooms(selected.value)}
-                        placeholder=""
-                    /> 
-                </div>
-            </div>
+                    <div className="max-beds">
+                        <label className="search-form-label">Maximum Bedrooms</label> 
+                        <Select
+                            options={[
+                                {value: 3, label: "3"},
+                                {value: 4, label: "4"},
+                                {value: 5, label: "5"},
+                                
+                            ]}
+                            onChange={(selected) => setMaxBedrooms(selected.value)}
+                            placeholder=""
+                        /> 
+                    </div>
+                </div>  
+            </div>    
 
             <div className="date-postcode-div">
                 <div>
