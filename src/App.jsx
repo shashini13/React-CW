@@ -84,10 +84,10 @@ function App() {
 
   return (
     <>
-    <Header/>
       <Routes>
         <Route path="/" element={
           <>
+            <Header/>
             <SearchForm onSearch={filtering}/>
             <div className="below-search-form-section">
               <PropertyList results={results} onFavourite={addFavourite}/>
