@@ -37,7 +37,21 @@
 
 .price-bedroom-div {
   display: flex;
+  padding: 10px 0; 
   gap: 20px;
+}
+
+
+.min-max-price, .min-max-beds {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+}
+
+.min-price, .max-price, .min-beds, .max-beds {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .date-postcode-div {
