@@ -234,9 +234,28 @@
   background-color: #f6f6f6;
 }
 
+.property-details-header {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.property-details-logo {
+  width: 13%;
+}
+
+#property-details-h1 {
+  font-size: 35px;
+  margin: 0 auto;
+}
+
 .image-gallery {
   margin: 0 auto;
   width: 80%;
+}
+
+.image-gallery-image {
+  width: 90%;
 }
 
 .image-gallery-svg {

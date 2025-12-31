@@ -27,6 +27,10 @@ const PropertyDetails = ({allProperties}) => {
     return (
         <div className="property-details-div">
             <div className="property-details-header-gallery">
+                <div className="property-details-header">
+                    <img src="/images/logo.png" alt="property details page logo" className="property-details-logo"></img>
+                    <h1 id="property-details-h1">Property Details</h1>
+                </div>
                 <h2>{property.type} - £{property.price.toLocaleString()}</h2>
                 <h3>{property.location}</h3>
                 <div className="image-gallery">
