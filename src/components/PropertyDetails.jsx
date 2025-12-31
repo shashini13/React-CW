@@ -42,7 +42,7 @@ const PropertyDetails = ({allProperties}) => {
                 <p>{property.smallDescription}</p>
                 <div className="property-details-summary">
                     <div className="summary-item">
-                        <p className="heading"><FaHome /> Property Type</p>
+                        <p className="heading"><FaHome /> Type</p>
                         <p className="value">{property.type}</p>
                     </div>
 
