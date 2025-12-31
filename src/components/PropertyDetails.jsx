@@ -4,7 +4,7 @@ import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { FaBed, FaBath, FaHome, FaClipboardCheck } from "react-icons/fa";
+import { FaBed, FaBath, FaHome, FaClipboardCheck, FaDollarSign, FaGem } from "react-icons/fa";
 
 const PropertyDetails = ({allProperties}) => {
     const {id} = useParams();
@@ -67,7 +67,12 @@ const PropertyDetails = ({allProperties}) => {
                         <Tab>Map</Tab>
                     </TabList>
 
-                    <TabPanel><p>{property.description}</p></TabPanel>
+                    <TabPanel>
+                        <p className="price-label">
+                            {property.price < 550000 ? (<><FaDollarSign/> Budget-friendly</>) : (<><FaGem/> Premium Listing</>)}
+                        </p>
+                        <p className="property-description">{property.description}</p>
+                    </TabPanel>
                     <TabPanel><img className="property-floor-plan-img" src={`/${property.floorPlan}`}></img></TabPanel>
                     <TabPanel>
                         <iframe 
