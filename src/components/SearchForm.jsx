@@ -111,7 +111,6 @@ const SearchForm = ({onSearch}) => {
                     <label>Postcode (eg: BR5)</label>
                     <TextField
                         value={postcode}
-                        variant="outlined"
                         onChange={(code) => setPostcode(code.target.value.toUpperCase())}
                     /> 
                 </div>
