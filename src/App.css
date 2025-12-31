@@ -472,3 +472,9 @@ button:hover {
     min-width: 100px;
   } 
 }  
+
+@media (min-width: 700px)  and (max-width: 911px) {
+  .add-remove-section {
+    flex-direction: column;
+  }
+}
