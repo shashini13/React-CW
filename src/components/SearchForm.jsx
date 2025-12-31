@@ -99,7 +99,7 @@ const SearchForm = ({onSearch}) => {
             </div>    
 
             <div className="date-postcode-div">
-                <div>
+                <div className="date-wrapper">
                     <label className="search-form-label">Date Added</label>    
                     <DatePicker
                         selected={dateAdded}   
@@ -107,7 +107,7 @@ const SearchForm = ({onSearch}) => {
                     />
                 </div>    
 
-                <div>
+                <div className="postcode-wrapper">
                     <label>Postcode (eg: BR5)</label>
                     <TextField
                         value={postcode}
