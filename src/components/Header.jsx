@@ -3,7 +3,7 @@ const Header = () => {
     return (
         <div className="header-div">
             <img src={`${base}images/logo.png`} alt="website-logo" className="logo-img" />
-            <h2>Find a place you'll love to call home !</h2>
+            <h1>Find a place you'll love to call home !</h1>
         </div>
     );
 }
