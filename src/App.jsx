@@ -14,22 +14,25 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetch('/properties.json')
+useEffect(() => {
+  fetch('/React-CW/properties.json')
     .then((res) => {
-        if (!res.ok) throw new Error("Failed to load properties")
-        return res.json();
+      if (!res.ok) {
+        throw new Error(`Failed to load properties (${res.status})`);
+      }
+      return res.json();
     })
     .then((data) => {
-      setAllProperties(data.properties)
-      setResults(data.properties)
-      setLoading(false)
+      setAllProperties(data.properties);
+      setResults(data.properties);
+      setLoading(false);
     })
-      .catch((err) => {
-      setError(err.message)
-      setLoading(false)
-    })
-  }, [])
+    .catch((err) => {
+      setError(err.message);
+      setLoading(false);
+    });
+}, []);
+
 
   if(loading) return <p>Loading properties...</p>
   if(error) return <p>Error: {error}</p>
