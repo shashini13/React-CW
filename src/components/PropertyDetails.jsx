@@ -9,14 +9,15 @@ import { FaBed, FaBath, FaHome, FaClipboardCheck, FaDollarSign, FaGem } from "re
 const PropertyDetails = ({allProperties}) => {
     const {id} = useParams();
     const property = allProperties.find(p => p.id === id);
+    const base = import.meta.env.BASE_URL;
 
     if (!property) {
         return <p>Loading property details...</p>
     }
 
-    const images = property.images.map(image => ({
-        original: `/${image}`,
-        thumbnail: `/${image}`
+    const images = property.images.map(img => ({
+        original: `${base}${img}`,
+        thumbnail: `${base}${img}`
     }));
 
     useEffect(() => {
@@ -28,7 +29,11 @@ const PropertyDetails = ({allProperties}) => {
         <div className="property-details-div">
             <div className="property-details-header-gallery">
                 <div className="property-details-header">
-                    <img src="/images/logo.png" alt="property details page logo" className="property-details-logo"></img>
+                    <img
+                        src={`${base}images/logo.png`}
+                        alt="property details page logo"
+                        className="property-details-logo"
+                    />
                     <h1 id="property-details-h1">Property Details</h1>
                 </div>
                 <h2>{property.type} - £{property.price.toLocaleString()}</h2>
@@ -77,7 +82,9 @@ const PropertyDetails = ({allProperties}) => {
                         </p>
                         <p className="property-description">{property.description}</p>
                     </TabPanel>
-                    <TabPanel><img className="property-floor-plan-img" src={`/${property.floorPlan}`}></img></TabPanel>
+                    <TabPanel>
+                        <img src={`${base}${property.floorPlan}`} alt="Floor plan" className="property-floor-plan-img" />
+                    </TabPanel>
                     <TabPanel>
                         <iframe 
                             src={property.iframeURL}
