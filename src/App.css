@@ -163,8 +163,8 @@ button:hover {
   padding: 18px;
   border-radius: 10px;
   text-align: center;
-  width: 40%;
-  min-width: 400px;
+  width: 35%;
+  min-width: 270px;
 }
 
 .property-card img {
@@ -204,6 +204,18 @@ button:hover {
   top: 0;          
   align-self: flex-start; 
   margin-right: 30px; 
+}
+
+.favourites .property-card {
+  width: 100%;      
+  min-width: 250px;      
+  box-sizing: border-box; 
+  padding: 10px;     
+}
+
+.favourites .property-card img {
+  width: 100%;
+  height: auto;
 }
 
 .favourites h2 {
@@ -419,15 +431,19 @@ button:hover {
   
   /*property card*/
   .property-card {
-    width: 90%;       
+    width: 80%;       
     min-width: auto;  
     margin: 0 auto; 
   }
 
   /*favourites*/
   .favourites {
-    margin: 0 auto;
-    width: fit-content;
+    margin: 0 auto 10px;  /* center it and add bottom spacing */
+    position: static;
+  }
+
+  .favourites .property-card {
+    width: 85%;       /* Take up the full width of the sidebar */
   }
 
   .add-remove-section {
@@ -435,7 +451,11 @@ button:hover {
   }
 
   .add-drag-drop {
-    
+    padding: 0;
+  }
+
+  .remove-drag-drop {
+    padding: 5px;
   }
 
   .favourites-btn {
@@ -469,4 +489,3 @@ button:hover {
     min-width: 100px;
   } 
 }  
-
