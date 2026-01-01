@@ -2,7 +2,7 @@ import PropertyCard from './PropertyCard';
 
 const PropertyList = ({results, onFavourite}) => {
     if (!results || results.length === 0) {
-        return <p>No properties found.</p>
+        return <p class="property-list-div">No properties found.</p>
     };
 
     return (
