@@ -33,9 +33,8 @@ button:hover {
   box-shadow: 2px 2px 5px rgb(199, 198, 198);
 }
 
-.header-div h2 {
+.header-div h1 {
   margin: 0;
-  font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -160,17 +159,17 @@ button:hover {
 /*PropertyCard.jsx*/
 .property-card {
   background-color: #dbd7d7;
-  margin: 0 0 10px 0;
-  padding: 10px 10px 25px 10px;
+  margin-bottom: 10px;
+  padding: 18px;
   border-radius: 10px;
   text-align: center;
   width: 40%;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .property-card img {
-  width: 80%;
-  height: 40%;
+  width: 100%;    
+  height: auto;   
   border-radius: 10px;
 }
 
@@ -236,6 +235,7 @@ button:hover {
 
 /*PropertyList*/
 .property-list-div {
+  text-align: center;
   margin-left: 10px;
   box-sizing: border-box;
   margin-top: 10px;
@@ -247,6 +247,7 @@ button:hover {
 }
 
 .property-list-content {
+  justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -282,7 +283,6 @@ button:hover {
 }
 
 #property-details-h1 {
-
   margin: 0 auto;
 }
 
@@ -382,7 +382,7 @@ button:hover {
   min-width: 400px;
 }
 
-@media (max-width: 705px) {
+@media (max-width: 700px) {
   /*search form*/ 
   .search-form {
     width: 80%;
@@ -419,25 +419,23 @@ button:hover {
   
   /*property card*/
   .property-card {
-    margin: 0;
-    padding-bottom: 28px;
-    margin-bottom: 10px;
-    min-width: 400px;
-  }
-
-  .property-card img {
-    width: 80%;
-    height: 45%;
+    width: 90%;       
+    min-width: auto;  
+    margin: 0 auto; 
   }
 
   /*favourites*/
   .favourites {
     margin: 0 auto;
-    width: 90%;
+    width: fit-content;
   }
 
   .add-remove-section {
     flex-direction: column;
+  }
+
+  .add-drag-drop {
+    
   }
 
   .favourites-btn {
@@ -472,8 +470,3 @@ button:hover {
   } 
 }  
 
-@media (min-width: 700px)  and (max-width: 911px) {
-  .add-remove-section {
-    flex-direction: column;
-  }
-}
