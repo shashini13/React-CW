@@ -64,10 +64,13 @@ useEffect(() => {
         return propertyDate > selectedFilters.dateAdded
       });
     }
-    if (selectedFilters.postcode) {
-      filtered = filtered.filter(p => p.postcode.toUpperCase().startsWith(selectedFilters.postcode.toUpperCase()));
+    if (selectedFilters.postcode?.trim()) {
+      const postcode = selectedFilters.postcode.trim().toUpperCase();
+      filtered = filtered.filter(p =>
+        p.postcode.toUpperCase().startsWith(postcode)
+      );
     }
-            
+         
     setResults(filtered);
   }; 
   
