@@ -34,7 +34,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                                 <PropertyCard
                                     key={p.id}
                                     p={p}
-                                    onFavourite={() => removeFavourite(p.id)} 
+                                    onFavourite={(property) => removeFavourite(property.id)} 
                                     draggable={true}
                                     isFavourite={true}
                                 />
@@ -43,15 +43,21 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                     )}
                 </div>  
                 <div className="mobile-favs">
-                    {favouriteProperties.map((p) => (
-                        <PropertyCard
-                        key={p.id}
-                        p={p}
-                        onFavourite={() => removeFavourite(p.id)}
-                        draggable
-                        isFavourite={true}
-                        />
-                    ))}
+                    {favouriteProperties.length === 0 ? (
+                        <p>No favourites yet</p>
+                    ) : (
+                        <div>
+                            {favouriteProperties.map((p) => (
+                                <PropertyCard
+                                key={p.id}
+                                p={p}
+                                onFavourite={() => removeFavourite(p.id)}
+                                draggable
+                                isFavourite={true}
+                                />
+                            ))}
+                        </div> 
+                    )}       
                 </div>
   
 
