@@ -158,19 +158,25 @@ button:hover {
 
 /*PropertyCard.jsx*/
 .property-card {
-  background-color: #dbd7d7;
+  background-color: rgba(232, 220, 220, 0.911);
   margin-bottom: 10px;
   padding: 18px;
   border-radius: 10px;
   text-align: center;
   width: 35%;
-  min-width: 270px;
+  min-width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .property-card img {
   width: 100%;    
   height: auto;   
   border-radius: 10px;
+  box-shadow: 0px 0px 4px rgb(81, 81, 81);
 }
 
 .property-card-location-p {
@@ -195,6 +201,13 @@ button:hover {
 
 .property-card-btn {
   margin: 5px;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  background-color: #ded6d6;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  cursor: grab;
 }
 
 /*Favourites*/
@@ -242,6 +255,10 @@ button:hover {
 }
 
 .favourites-btn {
+  display: none;
+}
+
+.phone-view-add-to-fav {
   display: none;
 }
 
@@ -394,6 +411,10 @@ button:hover {
   min-width: 400px;
 }
 
+.mobile-favs {
+  display: none;
+}
+
 @media (max-width: 700px) {
   /*search form*/ 
   .search-form {
@@ -451,7 +472,7 @@ button:hover {
   }
 
   .add-drag-drop {
-    padding: 0;
+    display: none;
   }
 
   .remove-drag-drop {
@@ -466,6 +487,27 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.856);
     border: 1px solid black;
     z-index: 1000;
+  }
+
+  .phone-view-add-to-fav {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color:rgba(235, 215, 215, 0.97);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px dashed #6d6c6c;
+    border-radius: 10px;
+  }
+
+  .mobile-favs {
+    display: block;
+    border: 2px dashed black;
+  }
+
+  .mobile-favs div {
+    margin-top: 10px;
   }
 
   /*property details*/
