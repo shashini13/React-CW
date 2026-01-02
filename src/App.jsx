@@ -80,6 +80,17 @@ useEffect(() => {
     }
   };
 
+  const handleAddDrop = (e) => {
+    e.preventDefault();
+    const data = e.dataTransfer.getData("application/JSON");
+    if (data) {
+      addFavourite(JSON.parse(data));
+    }
+  };
+
+  const handleDragOver = (e) => e.preventDefault();
+
+
   const removeFavourite = (id) => {
     setFavourites(favourites.filter(p => p.id !==id));
   };
@@ -96,7 +107,15 @@ useEffect(() => {
             <Header/>
             <SearchForm onSearch={filtering}/>
             <div className="below-search-form-section">
-              <PropertyList results={results} onFavourite={addFavourite}/>
+              <PropertyList 
+                results={results}
+                onFavourite={addFavourite}
+                favouriteProperties={favourites}
+                clearFavourites={clearFavourites}
+                removeFavourite={removeFavourite}
+                handleAddDrop={handleAddDrop}
+                handleDragOver={handleDragOver}
+              />
               {favourites.length > 0 && (
                 <button
                   className="favourites-btn"
@@ -116,6 +135,8 @@ useEffect(() => {
                 removeFavourite={removeFavourite} 
                 clearFavourites={clearFavourites}
                 addFavourite={addFavourite}
+                handleDragOver={handleDragOver}
+                handleAddDrop={handleAddDrop}
               />
             </div>
           </>
