@@ -10,9 +10,13 @@ import PropertyDetails from './components/PropertyDetails'
 function App() {
   const [allProperties, setAllProperties] = useState([]);
   const [results, setResults] = useState([]);
-  const [favourites, setFavourites] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const [favourites, setFavourites] = useState(() => {
+  const saved = localStorage.getItem("favourites");
+    return saved ? JSON.parse(saved) : [];  
+  });
 
 useEffect(() => {
   fetch('/React-CW/properties.json')
@@ -32,6 +36,11 @@ useEffect(() => {
       setLoading(false);
     });
 }, []);
+
+useEffect(() => {
+  localStorage.setItem("favourites", JSON.stringify(favourites));
+}, [favourites]);
+
 
 
   if(loading) return <p>Loading properties...</p>
@@ -97,7 +106,8 @@ useEffect(() => {
 
   const clearFavourites = () => {
     setFavourites([]);
-  }
+  };
+
 
   return (
     <>
