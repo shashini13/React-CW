@@ -1,17 +1,6 @@
 import PropertyCard from "./PropertyCard";
 
-const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addFavourite}) => {
-
-    const handleDrop = (e) => {
-        e.preventDefault();
-        const data = e.dataTransfer.getData('application/JSON');
-        if (data) {
-            const property = JSON.parse(data)
-            addFavourite(property);
-        }
-    }
-
-    const handleDragOver = (e) => e.preventDefault();
+const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addFavourite, handleDragOver, handleAddDrop}) => {
 
     const handleDropRemove = (e) => {
         e.preventDefault();
@@ -30,7 +19,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
             <div className="add-remove-section">
                 <div 
                     className="add-drag-drop"
-                    onDrop={handleDrop}
+                    onDrop={handleAddDrop}
                     onDragOver={handleDragOver}>
 
                     {favouriteProperties.length > 0 && (
@@ -52,7 +41,19 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                             ))}
                         </div>
                     )}
-                </div>    
+                </div>  
+                <div className="mobile-favs">
+                    {favouriteProperties.map((p) => (
+                        <PropertyCard
+                        key={p.id}
+                        p={p}
+                        onFavourite={() => removeFavourite(p.id)}
+                        draggable
+                        isFavourite={true}
+                        />
+                    ))}
+                </div>
+  
 
                 <div 
                     className="remove-drag-drop"
