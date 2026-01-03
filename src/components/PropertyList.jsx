@@ -28,6 +28,8 @@ const PropertyList = ({
                         key={p.id}
                         p = {p}
                         onFavourite={onFavourite}
+                        isFavourite={favouriteProperties.some(fp => fp.id === p.id)} 
+                        isInFavourites={false} 
                     />
                 ))}
             </div>

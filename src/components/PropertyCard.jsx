@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaBed } from "react-icons/fa";
 
-const PropertyCard = ({p, onFavourite, isFavourite=false, draggable=true}) => {
+const PropertyCard = ({p, onFavourite, isFavourite=false, draggable=true, isInFavourites = false}) => {
 
     const handleDragStart = (e) => {
         if (draggable) {
@@ -29,11 +29,11 @@ const PropertyCard = ({p, onFavourite, isFavourite=false, draggable=true}) => {
                 <button className="property-card-btn">View Details</button>
             </Link>
 
-            <button onClick={() => 
-                onFavourite(p)} 
+            <button onClick={() => onFavourite(p)} 
                 className="property-card-btn"
+                disabled={isFavourite && !isInFavourites}  
             >
-                {isFavourite ? "Remove" : "Add to favourites"}</button>
+                {isInFavourites ? "Remove" : "Add to favourites"}</button>
         </div>
     )
 };

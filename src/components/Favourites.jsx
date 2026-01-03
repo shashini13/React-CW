@@ -37,12 +37,16 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                                     onFavourite={(property) => removeFavourite(property.id)} 
                                     draggable={true}
                                     isFavourite={true}
+                                    isInFavourites={true} 
                                 />
                             ))}
                         </div>
                     )}
                 </div>  
                 <div className="mobile-favs">
+                    {favouriteProperties.length > 0 && (
+                        <button onClick={clearFavourites}>Clear Favourites</button>
+                    )}
                     {favouriteProperties.length === 0 ? (
                         <p>No favourites yet</p>
                     ) : (
@@ -54,6 +58,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                                 onFavourite={() => removeFavourite(p.id)}
                                 draggable
                                 isFavourite={true}
+                                isInFavourites={true} 
                                 />
                             ))}
                         </div> 
