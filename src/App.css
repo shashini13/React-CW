@@ -305,6 +305,16 @@ button:hover {
   flex: 3;
 }
 
+p.property-list-div {
+  text-align: center;
+  padding: 90px 0;
+  font-family: 'Marcellus', serif;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .property-list-div, .favourites{
   background-color: #f5ecec;
   border-radius: 12px;
