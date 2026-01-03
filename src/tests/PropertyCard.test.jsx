@@ -29,7 +29,7 @@ describe('PropertyCard', () => {
 
     render(
       <MemoryRouter>
-        <PropertyCard p={property} onFavourite={testRemoveFavourite} isFavourite={true} />
+        <PropertyCard p={property} onFavourite={testRemoveFavourite} isInFavourites={true} />
       </MemoryRouter>
     )
 
@@ -59,12 +59,10 @@ describe('PropertyCard', () => {
       </MemoryRouter>
     );
 
-    // Check that the button exists
     const button = screen.getByRole('button', { name: /view details/i });
     expect(button).toBeInTheDocument();
 
-    // Check that it's wrapped in a Link with correct `to` prop
-    const link = button.closest('a'); // find the parent anchor tag
+    const link = button.closest('a'); 
     expect(link).toHaveAttribute('href', property.url);
   });
 })
