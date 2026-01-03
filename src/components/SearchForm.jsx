@@ -42,6 +42,7 @@ const SearchForm = ({onSearch}) => {
                         <label className="search-form-label">Minimum Price (£)</label>
                         <Select
                             options={[
+                                {value: null, label: "No Min Price"},
                                 {value: 100000, label: "100 000"},
                                 {value: 200000, label: "200 000"},
                                 {value: 300000, label: "300 000"},
@@ -56,6 +57,7 @@ const SearchForm = ({onSearch}) => {
                         <label className="search-form-label">Maximum Price (£)</label> 
                         <Select
                             options={[
+                                {value: null, label: "No Max Price"},
                                 {value: 400000, label: "400 000"},
                                 {value: 500000, label: "500 000"},
                                 {value: 1000000, label: "1 000 000"},
@@ -72,6 +74,7 @@ const SearchForm = ({onSearch}) => {
                         <label className="search-form-label">Minimum Bedrooms</label> 
                         <Select
                             options={[
+                                {value: null, label: "No Min Beds"},
                                 {value: 1, label: "1"},
                                 {value: 2, label: "2"},
                                 {value: 3, label: "3"},
@@ -86,6 +89,7 @@ const SearchForm = ({onSearch}) => {
                         <label className="search-form-label">Maximum Bedrooms</label> 
                         <Select
                             options={[
+                                {value: null, label: "No Max Beds"},
                                 {value: 3, label: "3"},
                                 {value: 4, label: "4"},
                                 {value: 5, label: "5"},

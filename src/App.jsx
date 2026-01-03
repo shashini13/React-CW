@@ -53,16 +53,16 @@ useEffect(() => {
     if (selectedFilters.type && selectedFilters.type != "Any") {
       filtered = filtered.filter(p => p.type === selectedFilters.type);
     }
-    if (selectedFilters.minPrice) {
+    if (selectedFilters.minPrice != null) {
       filtered = filtered.filter(p => p.price >= selectedFilters.minPrice);
     }
-    if (selectedFilters.maxPrice) {
+    if (selectedFilters.maxPrice != null) {
       filtered = filtered.filter(p => p.price <= selectedFilters.maxPrice);
     }
-    if (selectedFilters.minBedrooms) {
+    if (selectedFilters.minBedrooms != null) {
       filtered = filtered.filter(p => p.bedrooms >= selectedFilters.minBedrooms);
     }
-    if (selectedFilters.maxBedrooms) {
+    if (selectedFilters.maxBedrooms != null) {
       filtered = filtered.filter(p => p.bedrooms <= selectedFilters.maxBedrooms);
     }
     if (selectedFilters.dateAdded) {
