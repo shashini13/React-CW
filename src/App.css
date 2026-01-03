@@ -2,8 +2,9 @@
 #root {
   width: 100%;
   background-color: #fcfbfb;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 500;
   line-height: 1.5;
+  font-family: 'Lato', system-ui, Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -11,7 +12,10 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
+  font-family: 'Marcellus', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 button {
@@ -19,15 +23,15 @@ button {
   border: 1px solid transparent;
   padding: 10px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 550;
   font-family: inherit;
   background-color: #ffffff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s linear;
 }
 
 button:hover {
-  border-color: #9c9c9c;
+  border-color: #ae9393;
 }
 
 /*Header.jsx*/
@@ -42,9 +46,13 @@ button:hover {
 }
 
 .header-div h1 {
-  margin: 0;
+  margin: 20px 0;
   margin-bottom: 20px;
   text-align: center;
+  font-family: 'Marcellus', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .logo-img {
@@ -211,6 +219,8 @@ button:hover {
 .property-card-h2 {
   font-size: larger;
   margin: 5px 0 0 0;
+  font-family: 'Lato', system-ui, Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 .property-card-btn {
@@ -219,7 +229,7 @@ button:hover {
 
 .property-card:hover {
   transform: translateY(-4px);
-  background-color: #ded6d6;
+  background-color: rgba(235, 215, 215, 0.911);
   cursor: grab;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
@@ -238,7 +248,9 @@ button:hover {
   width: 100%;      
   min-width: 240px;      
   box-sizing: border-box; 
-  padding: 10px;     
+  padding: 10px;  
+  margin-top: 10px; 
+  color: black;  
 }
 
 .favourites .property-card img {
@@ -255,15 +267,21 @@ button:hover {
   display: flex;
   text-align: center;
   padding: 10px;
+  gap: 5px;
 }
 
 .add-drag-drop {
-  border: 2px dashed grey; 
+  border: 2px dashed rgb(89, 164, 15); 
+  color: rgb(2, 101, 2);
+  border-radius: 10px;
+  background-color:  rgba(207, 239, 175, 0.73);
 }
 
 .remove-drag-drop {
   border: 2px dashed red;
   color: red;
+  border-radius: 10px;
+  background-color: rgba(255, 195, 195, 0.731);
 }
 
 .add-drag-drop, .remove-drag-drop {
@@ -337,6 +355,10 @@ button:hover {
 
 #property-details-h1 {
   margin: 0 auto;
+  font-family: 'Marcellus', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .image-gallery {
@@ -363,6 +385,7 @@ button:hover {
   text-align: center;
   margin-top: 0;
   margin-bottom: 15px;
+  font-family: 'Lato', system-ui, Helvetica, Arial, sans-serif;
 }
 
 .property-details-summary {
@@ -409,7 +432,7 @@ button:hover {
 
 .tab-list .react-tabs__tab {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .price-label {
@@ -417,6 +440,8 @@ button:hover {
   font-weight: 500;
   font-style: italic;
   padding-top: 10px;
+  display: inline-flex;
+  gap: 10px;
 }
 
 .property-description {
@@ -440,7 +465,7 @@ button:hover {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 706px) {
   /*search form*/ 
   .search-form {
     width: 80%;
@@ -484,12 +509,13 @@ button:hover {
 
   /*favourites*/
   .favourites {
-    margin: 0 auto 10px;  /* center it and add bottom spacing */
+    margin: 0 auto 10px;  
+    width: 90%;
     position: static;
   }
 
   .favourites .property-card {
-    width: 85%;       /* Take up the full width of the sidebar */
+    width: 85%;      
   }
 
   .add-remove-section {
@@ -522,13 +548,24 @@ button:hover {
     background-color:rgba(235, 215, 215, 0.97);
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px dashed #6d6c6c;
+    border: 2px dashed #504e4e;
     border-radius: 10px;
   }
 
   .mobile-favs {
     display: block;
-    border: 2px dashed black;
+    background-color: #f5ecec;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    box-shadow: 
+      0 4px 10px rgba(0, 0, 0, 0.12),
+      0 1px 3px rgba(0, 0, 0, 0.379);
+  }
+
+  .mobile-favs .property-card {
+    font-weight: normal;
   }
 
   .mobile-favs div {
@@ -548,7 +585,8 @@ button:hover {
 
   #property-details-h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
+    padding-bottom: 10px;
   }
 
   .property-details-logo {
