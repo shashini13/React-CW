@@ -51,6 +51,7 @@ button:hover {
   text-align: center;
   font-family: 'Marcellus', serif;
   font-weight: 900;
+  font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -76,13 +77,14 @@ button:hover {
 }
 
 .property-type-input-div .css-13cymwt-control {
-  width: 100%;
+  width: 98%;
 }
 
 .price-bedroom-div {
   display: flex;
   padding: 10px 0; 
   gap: 20px;
+  width: 98%;
 }
 
 .min-max-price, .min-max-beds {
@@ -102,6 +104,7 @@ button:hover {
   justify-content: space-between;
   gap: 20px;
   padding-bottom: 20px;
+  width: 98%;
 }
 
 .date-postcode-div .postcode-wrapper {
@@ -123,7 +126,7 @@ button:hover {
 }
 
 .react-datepicker-wrapper input{
-  width: 95%;
+  width: 92%;
 }
 
 .react-datepicker__header {
@@ -443,13 +446,15 @@ p.property-list-div {
 .tab-list .react-tabs__tab {
   text-transform: uppercase;
   font-weight: 600;
+  padding-bottom: 10px;
+
 }
 
 .price-label {
   font-size: 18px;
   font-weight: 500;
   font-style: italic;
-  padding-top: 10px;
+  padding: 0;
   display: inline-flex;
   gap: 10px;
 }
@@ -459,16 +464,21 @@ p.property-list-div {
   text-align: justify;
 }
 
+.property-floor-plan-img {
+  width: 70%;
+}
+
 .property-floor-plan-img, .map-iframe {
   display: block;
-  width: 60%;
   margin: 0 auto;
 }
 
 .map-iframe {
   border: 0;
-  height: 400px;
-  min-width: 400px;
+  height: 350px;
+  width: 50%;
+  min-height: 100px;
+  min-width: 200px;
 }
 
 .mobile-favs {
@@ -603,4 +613,13 @@ p.property-list-div {
     width: 25%;
     min-width: 100px;
   } 
+
+  .property-floor-plan-img {
+    width: 90%;
+  }
+
+  .map-iframe {
+    height: 250px;
+    min-width: 250px;
+  }
 }  
