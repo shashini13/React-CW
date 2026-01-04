@@ -11,14 +11,15 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, hand
         }
     }
 
-
     return (
         <div id="favourites" className="favourites">
             <h2>Favourite Properties</h2>
 
             <div className="add-remove-section">
+                {/*Desktop layout*/}
                 <div 
                     className="add-drag-drop"
+                    data-testid="add-zone-desktop"
                     onDrop={handleAddDrop}
                     onDragOver={handleDragOver}>
 
@@ -29,7 +30,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, hand
                     {favouriteProperties.length === 0 ? (
                         <p>Drag here to add to favourites</p>
                     ) : (
-                        <div>
+                        <div data-testid="favourites-list-desktop">
                             {favouriteProperties.map(p => (
                                 <PropertyCard
                                     key={p.id}
@@ -45,7 +46,7 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, hand
                 </div> 
 
                 {/*Mobile layout*/}
-                <div className="mobile-favs">
+                <div className="mobile-favs" data-testid="mobile-favs-section">
                     {favouriteProperties.length > 0 && (
                         <button onClick={clearFavourites}>Clear Favourites</button>
                     )}
@@ -66,20 +67,18 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, hand
                         </div> 
                     )}       
                 </div>
-  
 
+                {/*Remove drag-drop*/}
                 <div 
                     className="remove-drag-drop"
+                    data-testid="remove-zone"
                     onDrop={handleDropRemove}
                     onDragOver={handleDragOver}
                 >
                     <p>Drag here to remove a favourite</p>
                 </div>
             </div>
-
         </div>
-
-        
     )
 }
 
