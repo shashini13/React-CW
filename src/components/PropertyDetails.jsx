@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
@@ -28,6 +28,11 @@ const PropertyDetails = ({allProperties}) => {
 
     return (
         <div className="property-details-div">
+
+            <Link to="/">
+                <button className="back-to-home-btn">Back to Home</button>
+            </Link>
+            
             <div className="property-details-header-gallery">
                 <div className="property-details-header">
                     <img
