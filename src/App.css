@@ -7,6 +7,7 @@
   font-family: 'Lato', system-ui, Helvetica, Arial, sans-serif;
 }
 
+/*global*/
 h1 {
   letter-spacing: -0.5px;
 }
@@ -237,7 +238,7 @@ button:hover {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
-/*Favourites*/
+/*Favourites.jsx*/
 .favourites {
   flex: 1;
   position: sticky;
@@ -299,7 +300,7 @@ button:hover {
   display: none;
 }
 
-/*PropertyList*/
+/*PropertyList.jsx*/
 .property-list-div {
   text-align: center;
   margin-left: 8px;
@@ -344,7 +345,7 @@ p.property-list-div {
   margin-top: 20px;
 }
 
-/*PropertyDetails*/
+/*PropertyDetails.jsx*/
 .property-details-header-gallery, .property-details-small-content, .property-details-tablist {
   width: 90%;
   border-radius: 5px;
@@ -447,7 +448,6 @@ p.property-list-div {
   text-transform: uppercase;
   font-weight: 600;
   padding-bottom: 10px;
-
 }
 
 .price-label {
@@ -486,7 +486,7 @@ p.property-list-div {
 }
 
 @media (max-width: 706px) {
-  /*search form*/ 
+  /*Phone view Searchform*/ 
   .search-form {
     width: 80%;
     margin: 0 auto;
@@ -500,13 +500,13 @@ p.property-list-div {
     gap: 10px;
   }
 
-  /*below search form*/
+  /*Phone view - below SearchForm*/
   .below-search-form-section {
     flex-direction: column;
     align-items: center;
   }
 
-  /*property list*/
+  /*Phone view PropertyList*/
   .property-list-div {
     margin: 0;
     width: 90%;
@@ -520,14 +520,14 @@ p.property-list-div {
     justify-content: center;
   }
   
-  /*property card*/
+  /*Phone view PropertyCard*/
   .property-card {
     width: 80%;       
     min-width: auto;  
     margin: 0 auto; 
   }
 
-  /*favourites*/
+  /*Phone view Favourites*/
   .favourites {
     margin: 0 auto 10px;  
     width: 90%;
@@ -592,7 +592,7 @@ p.property-list-div {
     margin-top: 10px;
   }
 
-  /*property details*/
+  /*Phone view PropertyDetails*/
   .property-details-summary {
     width: 60%;
     grid-template-columns: 1fr;
