@@ -1,6 +1,6 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import SearchForm from '../components/SearchForm';
-import { vi } from 'vitest';
+import { vi, expect, describe, test, beforeEach } from 'vitest';
 import userEvent from '@testing-library/user-event';
 
 describe('SearchForm Component', () => {
@@ -8,46 +8,46 @@ describe('SearchForm Component', () => {
 
   beforeEach(() => {
     onSearchMock = vi.fn();
-    render(<SearchForm onSearch={onSearchMock} />);
   });
 
+  //Test1: Normal Search 
   test('filters properties using normal search (type only)', async () => {
     const user = userEvent.setup();
+    render(<SearchForm onSearch={onSearchMock} />);
 
-    const typeSelect = screen.getAllByRole('combobox')[0];
-
-    fireEvent.focus(typeSelect);
-    fireEvent.change(typeSelect, { target: { value: 'Flat' } });
-    fireEvent.keyDown(typeSelect, { key: 'Enter', code: 'Enter' });
+    const typeContainer = screen.getByTestId('type-select');
+    const typeInput = typeContainer.querySelector('input');
+    await user.type(typeInput, 'Flat{enter}');
 
     const submitButton = screen.getByRole('button', { name: /search/i });
     await user.click(submitButton);
 
     expect(onSearchMock).toHaveBeenCalledWith(
       expect.objectContaining({
-        type: 'Flat'
+        type: 'Flat',
       })
     );
   });
 
-  test('filters properties using multiple filters (type + price range)', async () => {
+  //Test2: Multiple Filters
+  test('filters properties using multiple filters (type, price, and postcode)', async () => {
     const user = userEvent.setup();
+    render(<SearchForm onSearch={onSearchMock} />);
 
-    const typeSelect = screen.getAllByRole('combobox')[0];
-    const minPriceSelect = screen.getAllByRole('combobox')[1];
-    const maxPriceSelect = screen.getAllByRole('combobox')[2];
+    const typeContainer = screen.getByTestId('type-select');
+    const typeInput = typeContainer.querySelector('input');
+    await user.type(typeInput, 'House{enter}');
 
-    fireEvent.focus(typeSelect);
-    fireEvent.change(typeSelect, { target: { value: 'House' } });
-    fireEvent.keyDown(typeSelect, { key: 'Enter', code: 'Enter' });
+    const minPriceContainer = screen.getByTestId('min-price-select');
+    const minPriceInput = minPriceContainer.querySelector('input');
+    await user.type(minPriceInput, '200 000{enter}');
 
-    fireEvent.focus(minPriceSelect);
-    fireEvent.change(minPriceSelect, { target: { value: 200000 } });
-    fireEvent.keyDown(minPriceSelect, { key: 'Enter', code: 'Enter' });
+    const maxPriceContainer = screen.getByTestId('max-price-select');
+    const maxPriceInput = maxPriceContainer.querySelector('input');
+    await user.type(maxPriceInput, '500 000{enter}');
 
-    fireEvent.focus(maxPriceSelect);
-    fireEvent.change(maxPriceSelect, { target: { value: 500000 } });
-    fireEvent.keyDown(maxPriceSelect, { key: 'Enter', code: 'Enter' });
+    const postcodeInput = screen.getByTestId('postcode-input');
+    await user.type(postcodeInput, 'br5');
 
     const submitButton = screen.getByRole('button', { name: /search/i });
     await user.click(submitButton);
@@ -56,7 +56,8 @@ describe('SearchForm Component', () => {
       expect.objectContaining({
         type: 'House',
         minPrice: 200000,
-        maxPrice: 500000
+        maxPrice: 500000,
+        postcode: 'BR5'
       })
     );
   });

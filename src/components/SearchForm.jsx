@@ -24,7 +24,7 @@ const SearchForm = ({onSearch}) => {
 
     return (
         <form className="search-form" onSubmit={handleSubmit}>
-            <div className="property-type-input-div">
+            <div className="property-type-input-div" data-testid="type-select">
                 <label className="search-form-label">Property Type</label>
                 <Select 
                     options={[ 
@@ -38,7 +38,7 @@ const SearchForm = ({onSearch}) => {
             </div>
 
             <div className="price-bedroom-div">
-                <div className="min-max-price">
+                <div className="min-max-price" data-testid="min-price-select">
                     <div className="min-price">
                         <label className="search-form-label">Minimum Price (£)</label>
                         <Select
@@ -54,7 +54,7 @@ const SearchForm = ({onSearch}) => {
                         /> 
                     </div>
 
-                    <div className="max-price">
+                    <div className="max-price" data-testid="max-price-select">
                         <label className="search-form-label">Maximum Price (£)</label> 
                         <Select
                             options={[
@@ -104,7 +104,7 @@ const SearchForm = ({onSearch}) => {
             </div>    
 
             <div className="date-postcode-div">
-                <div className="date-wrapper">
+                <div className="date-wrapper" data-testid="date-picker">
                     <label className="search-form-label">Date Added</label>    
                     <DatePicker
                         selected={dateAdded}   
@@ -115,6 +115,9 @@ const SearchForm = ({onSearch}) => {
                 <div className="postcode-wrapper">
                     <label>Postcode (eg: BR5)</label>
                     <TextField
+                        slotProps={{
+                            htmlInput: { "data-testid": "postcode-input" }
+                        }}
                         value={postcode}
                         onChange={(code) => setPostcode(code.target.value.toUpperCase())}
                     /> 
