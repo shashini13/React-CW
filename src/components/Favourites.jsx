@@ -1,6 +1,6 @@
 import PropertyCard from "./PropertyCard";
 
-const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addFavourite, handleDragOver, handleAddDrop}) => {
+const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, handleDragOver, handleAddDrop}) => {
 
     const handleDropRemove = (e) => {
         e.preventDefault();
@@ -42,7 +42,9 @@ const Favourites = ({favouriteProperties, removeFavourite, clearFavourites, addF
                             ))}
                         </div>
                     )}
-                </div>  
+                </div> 
+
+                {/*Mobile layout*/}
                 <div className="mobile-favs">
                     {favouriteProperties.length > 0 && (
                         <button onClick={clearFavourites}>Clear Favourites</button>

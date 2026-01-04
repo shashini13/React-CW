@@ -8,45 +8,47 @@ import { Routes, Route } from 'react-router-dom';
 import PropertyDetails from './components/PropertyDetails'
 
 function App() {
+  //Initialised states
   const [allProperties, setAllProperties] = useState([]);
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  //Local storage (first render)
   const [favourites, setFavourites] = useState(() => {
   const saved = localStorage.getItem("favourites");
     return saved ? JSON.parse(saved) : [];  
   });
 
-useEffect(() => {
-  fetch('/React-CW/properties.json')
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error(`Failed to load properties (${res.status})`);
-      }
-      return res.json();
-    })
-    .then((data) => {
-      setAllProperties(data.properties);
-      setResults(data.properties);
-      setLoading(false);
-    })
-    .catch((err) => {
-      setError(err.message);
-      setLoading(false);
-    });
-}, []);
+  //Fetched data
+  useEffect(() => {
+    fetch('/React-CW/properties.json')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error( `Failed to load properties (${res.status})`);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setAllProperties(data.properties);
+        setResults(data.properties);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
 
-useEffect(() => {
-  localStorage.setItem("favourites", JSON.stringify(favourites));
-}, [favourites]);
-
-
+  //Save to local storage
+  useEffect(() => {
+    localStorage.setItem("favourites", JSON.stringify(favourites));
+  }, [favourites]);
 
   if(loading) return <p>Loading properties...</p>
   if(error) return <p>Error: {error}</p>
 
-        
+  //Filtering logic
   const filtering = (selectedFilters) => {
     let filtered = allProperties;
 
@@ -78,8 +80,7 @@ useEffect(() => {
       filtered = filtered.filter(p =>
         p.postcode.toUpperCase().startsWith(postcode)
       );
-    }
-         
+    }   
     setResults(filtered);
   }; 
   
@@ -89,6 +90,7 @@ useEffect(() => {
     }
   };
 
+  //Drag-drop
   const handleAddDrop = (e) => {
     e.preventDefault();
     const data = e.dataTransfer.getData("application/JSON");
@@ -99,7 +101,7 @@ useEffect(() => {
 
   const handleDragOver = (e) => e.preventDefault();
 
-
+  //Remove or clear favs
   const removeFavourite = (id) => {
     setFavourites(favourites.filter(p => p.id !==id));
   };

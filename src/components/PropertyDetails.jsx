@@ -20,6 +20,7 @@ const PropertyDetails = ({allProperties}) => {
         thumbnail: `${base}${img}`
     }));
 
+    //Scrolls to top of page when property details page renders
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);

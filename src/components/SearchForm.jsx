@@ -5,6 +5,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 import TextField from '@mui/material/TextField';
 
 const SearchForm = ({onSearch}) => {
+    //Initialised states
     const [type, setType] = useState("Any");
 
     const [minPrice, setMinPrice] = useState(null);
@@ -17,7 +18,7 @@ const SearchForm = ({onSearch}) => {
     const [postcode, setPostcode] = useState("");
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); //To prevent page reloading 
         onSearch({type, minPrice, maxPrice, minBedrooms, maxBedrooms, dateAdded, postcode});
     }
 
