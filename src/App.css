@@ -437,8 +437,9 @@ p.property-list-div {
 
 .value {
   padding-top: 5px;
-  margin: 10px;
   border-top: 2px solid rgb(105, 94, 94);
+  width: 60%;
+  margin: 8px auto
 }
 
 .tab-list {

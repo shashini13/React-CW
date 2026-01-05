@@ -102,10 +102,7 @@ const PropertyDetails = ({allProperties}) => {
                         </iframe>
                     </TabPanel>
                 </Tabs>
-            </div>
-            
-            
-            
+            </div>    
         </div>
     );
 }
